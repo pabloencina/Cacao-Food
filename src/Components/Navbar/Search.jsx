@@ -17,7 +17,7 @@ const Search = () => {
 
   return (
     <Container>
-      <div className="d-flex" style={{ width: "600px" }}>
+      <div className="d-flex justify-content-end" style={{ width: "400px" }}>
         <Button
           onClick={handleOnClick}
           style={{ backgroundColor: "inherit", border: "none" }}

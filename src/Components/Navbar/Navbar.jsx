@@ -24,13 +24,19 @@ function ColorSchemesExample() {
           <Nav.Link style={{ width: "450px" }} href="#home">
             <div className="d-flex justify-content-end">
               <div style={{ width: "70px" }}>
-                <img className="searchButton" src={search} alt="search" />
+                <img
+                  title="Búsqueda"
+                  className="searchButton"
+                  src={search}
+                  alt="search"
+                />
               </div>
               <div>
                 <img
                   className="shoppingCartButton"
                   src={shoppingCart}
                   alt="shoppingCart"
+                  title="Carrito de Compras"
                 />
               </div>
             </div>

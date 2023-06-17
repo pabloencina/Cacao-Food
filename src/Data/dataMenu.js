@@ -11,9 +11,9 @@ export const dataMenu = [
   },
   {
     id: 2,
-    name: "Pollo a la plancha con ensalada mixta",
+    name: "Pollo con pure mixta",
     description:
-      "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qureiciendis, recusandae cum quisquam facilis ipsam deserunt, corporisoptio perferendis dolores est doloribus soluta illum, totam repellendus aliquam nulla magnam. Fugit?",
     price: 3000,
     image: { chickenImage },
     classification: "",
@@ -21,8 +21,7 @@ export const dataMenu = [
   {
     id: 3,
     name: "Pollo a la plancha con ensalada mixta",
-    description:
-      "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
+    description: "El pollo a la plancha con ensalada mixta.",
     price: 3000,
     image: { chickenImage },
     classification: "",

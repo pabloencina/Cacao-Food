@@ -1,10 +1,11 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import search from "../../Images/search.svg";
+
 import "../../Css/search.css";
 import shoppingCart from "../../Images/shopping-cart.svg";
 import "../../Css/shoppingCart.css";
+import Search from "./Search";
 
 function NavbarComponent() {
   return (
@@ -23,16 +24,9 @@ function NavbarComponent() {
           </Nav>
         </Container>
         <Container>
-          <Nav.Link style={{ width: "450px" }} href="#home">
+          <Nav.Link style={{ width: "450px" }} href="">
             <div className="d-flex justify-content-end">
-              <div style={{ width: "70px" }}>
-                <img
-                  title="Búsqueda"
-                  className="searchButton"
-                  src={search}
-                  alt="search"
-                />
-              </div>
+              <Search />
               <div>
                 <img
                   className="shoppingCartButton"

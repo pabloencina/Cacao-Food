@@ -6,18 +6,20 @@ import "../../Css/search.css";
 import shoppingCart from "../../Images/shopping-cart.svg";
 import "../../Css/shoppingCart.css";
 
-function ColorSchemesExample() {
+function NavbarComponent() {
   return (
     <>
       <Navbar bg="light" variant="light">
         <Container>
-          <Navbar.Brand href="#home">Logo</Navbar.Brand>
+          <Navbar.Brand title="Inicio" href="inicio">
+            Logo
+          </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#menu">Menú</Nav.Link>
-            <Nav.Link href="#nuestra-historia">Nuestra historia</Nav.Link>
-            <Nav.Link href="#clientes">Clientes</Nav.Link>
-            <Nav.Link href="#contactanos">Contáctenos</Nav.Link>
+            <Nav.Link href="inicio">Inicio</Nav.Link>
+            <Nav.Link href="menu">Menú</Nav.Link>
+            <Nav.Link href="nuestra-historia">Nuestra historia</Nav.Link>
+            <Nav.Link href="clientes">Clientes</Nav.Link>
+            <Nav.Link href="contactanos">Contáctenos</Nav.Link>
           </Nav>
         </Container>
         <Container>
@@ -51,4 +53,4 @@ function ColorSchemesExample() {
   );
 }
 
-export default ColorSchemesExample;
+export default NavbarComponent;

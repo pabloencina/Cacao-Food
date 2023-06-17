@@ -7,7 +7,7 @@ export const dataMenu = [
       "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
     price: 3000,
     image: { chickenImage },
-    classification: "",
+    classification: "postres",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const dataMenu = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qureiciendis, recusandae cum quisquam facilis ipsam deserunt, corporisoptio perferendis dolores est doloribus soluta illum, totam repellendus aliquam nulla magnam. Fugit?",
     price: 3000,
     image: { chickenImage },
-    classification: "",
+    classification: "ensalada",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const dataMenu = [
     description: "El pollo a la plancha con ensalada mixta.",
     price: 3000,
     image: { chickenImage },
-    classification: "",
+    classification: "ensalada",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ export const dataMenu = [
       "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
     price: 3000,
     image: { chickenImage },
-    classification: "",
+    classification: "cremas",
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ export const dataMenu = [
       "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
     price: 3000,
     image: { chickenImage },
-    classification: "",
+    classification: "cremas",
   },
   {
     id: 7,
@@ -61,7 +61,7 @@ export const dataMenu = [
       "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
     price: 3000,
     image: { chickenImage },
-    classification: "",
+    classification: "cremas",
   },
   {
     id: 8,
@@ -70,7 +70,7 @@ export const dataMenu = [
       "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
     price: 3000,
     image: { chickenImage },
-    classification: "",
+    classification: "bebidas",
   },
   {
     id: 9,
@@ -79,7 +79,7 @@ export const dataMenu = [
       "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
     price: 3000,
     image: { chickenImage },
-    classification: "",
+    classification: "bebidas",
   },
   {
     id: 10,
@@ -88,6 +88,6 @@ export const dataMenu = [
       "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
     price: 3000,
     image: { chickenImage },
-    classification: "",
+    classification: "bebidas",
   },
 ];

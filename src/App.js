@@ -1,5 +1,11 @@
+import ColorSchemesExample from "./Components/Navbar/Navbar";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <ColorSchemesExample />
+    </>
+  );
 }
 
 export default App;

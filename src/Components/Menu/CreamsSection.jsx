@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { dataMenu } from "../../Data/dataMenu";
 import CardMenu from "./CardMenu";
+import MenuSections from "./MenuSections";
 
 const CreamsSection = () => {
   return (
@@ -16,6 +17,7 @@ const CreamsSection = () => {
       >
         <h1>Cremas</h1>
       </div>
+      <MenuSections />
       <div className="container">
         <Row>
           {dataMenu.map((menu) => {

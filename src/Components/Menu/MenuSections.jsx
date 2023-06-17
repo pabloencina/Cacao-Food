@@ -13,6 +13,7 @@ const MenuSections = () => {
       }}
     >
       <Link
+        to={"/menu"}
         style={{
           margin: "15px",
           backgroundColor: "white",

@@ -20,7 +20,7 @@ function Menu() {
       <div
         className="d-flex justify-content-center"
         style={{
-          height: "200px",
+          height: "100px",
           alignContent: "center",
           alignItems: "center",
         }}

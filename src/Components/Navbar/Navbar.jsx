@@ -27,7 +27,7 @@ function NavbarComponent() {
           <Nav.Link style={{ width: "450px" }} href="">
             <div className="d-flex justify-content-end">
               <Search />
-              <div>
+              <div className="d-flex justify-content-end">
                 <img
                   className="shoppingCartButton"
                   src={shoppingCart}

@@ -1,6 +1,7 @@
 import React from "react";
 import "../../Css/menuButtons.css";
-import { Link } from "react-router-dom";
+import "../../Css/active.css";
+import { NavLink } from "react-router-dom";
 
 const MenuSections = () => {
   return (
@@ -12,8 +13,9 @@ const MenuSections = () => {
         alignItems: "center",
       }}
     >
-      <Link
+      <NavLink
         to={"/menu"}
+        activeClassName="active"
         style={{
           margin: "15px",
           backgroundColor: "white",
@@ -22,8 +24,9 @@ const MenuSections = () => {
         }}
       >
         Platos
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
+        activeClassName="active"
         to={"/ensaladas"}
         style={{
           margin: "15px",
@@ -33,9 +36,10 @@ const MenuSections = () => {
         }}
       >
         Ensaladas
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to={"/postres"}
+        activeClassName="active"
         style={{
           margin: "15px",
           backgroundColor: "white",
@@ -44,8 +48,9 @@ const MenuSections = () => {
         }}
       >
         Postres
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
+        activeClassName="active"
         to={"/cremas"}
         style={{
           margin: "15px",
@@ -55,8 +60,9 @@ const MenuSections = () => {
         }}
       >
         Cremas
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
+        activeClassName="active"
         to={"/bebidas"}
         style={{
           margin: "15px",
@@ -66,7 +72,7 @@ const MenuSections = () => {
         }}
       >
         Bebidas
-      </Link>
+      </NavLink>
     </div>
   );
 };

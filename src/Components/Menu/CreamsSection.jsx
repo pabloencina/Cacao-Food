@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { dataMenu } from "../../Data/dataMenu";
+import dataMenu from "../../Data/dataMenu.js";
 import CardMenu from "./CardMenu";
 import MenuSections from "./MenuSections";
 

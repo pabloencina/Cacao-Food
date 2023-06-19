@@ -5,6 +5,7 @@ import SaladSection from "./Components/Menu/SaladSection";
 import DessertsSection from "./Components/Menu/DessertsSection";
 import CreamsSection from "./Components/Menu/CreamsSection";
 import DrinksSection from "./Components/Menu/DrinksSection";
+import Contactanos from "./Components/Menu/Contactanos";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/postres" element={<DessertsSection />} />
         <Route path="/cremas" element={<CreamsSection />} />
         <Route path="/bebidas" element={<DrinksSection />} />
+        <Route path="/contactanos" element={<Contactanos />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import CardMenu from "./CardMenu";
-import { dataMenu } from "../../Data/dataMenu";
+import dataMenu from "../../Data/dataMenu";
 import MenuSections from "./MenuSections";
 
 function Menu() {

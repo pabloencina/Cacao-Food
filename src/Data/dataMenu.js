@@ -1,5 +1,6 @@
 import chickenImage from "../Images/imageChicken.jpg";
-export const dataMenu = [
+
+const dataMenu = [
   {
     id: 1,
     name: "Pollo a la plancha con ensalada mixta",
@@ -91,3 +92,5 @@ export const dataMenu = [
     classification: "bebidas",
   },
 ];
+
+export default dataMenu;

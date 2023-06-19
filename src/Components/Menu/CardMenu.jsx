@@ -15,7 +15,7 @@ const CardMenu = ({ menu }) => {
                 width: "100px",
               }}
             >
-              {menu.price}$
+              $ {menu.price}
             </p>
           </div>
           <div

@@ -2,18 +2,24 @@ import React, { useState } from "react";
 import search from "../../Images/search.svg";
 import { Button, Container, Form } from "react-bootstrap";
 
-const Search = () => {
+const Search = ({ onSearch }) => {
   const [showInput, setShowInput] = useState(false);
   const [inputValue, setInputValue] = useState("");
 
   const handleOnClick = (e) => {
-    console.log("clickme");
     setShowInput(!showInput);
   };
 
   const handleInputChange = (e) => {
+    console.log(e.target.value);
     setInputValue(e.target.value);
   };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   onSearch(inputValue);
+  //   console.log("hola");
+  // };
 
   return (
     <Container>
@@ -31,6 +37,7 @@ const Search = () => {
         </Button>
         {showInput && (
           <Form.Control
+            //onSubmit={handleSubmit}
             style={{ width: "300px" }}
             type="text"
             value={inputValue}

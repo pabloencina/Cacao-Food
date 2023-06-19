@@ -1,0 +1,22 @@
+.nosotros {
+
+    margin: 2rem 0;
+
+    &__titulos {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    &__container {
+        position: relative;
+
+        &--textos {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+    }
+
+
+}

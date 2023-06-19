@@ -1,0 +1,34 @@
+.home {
+    margin: 3rem 0;
+
+    &__division{
+        margin: 0 2rem;
+    }
+
+    &__presentacion {
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        align-self: center;
+
+        &--button {
+            background-color: $colorFondoNavbar;
+            color: $colorTexto;
+            font-weight: bold;
+            align-self: flex-start;
+            margin-top: 2rem;
+        }
+    }
+
+    &__titulo {
+        margin: 1rem 0;
+    }
+
+    &__plato {
+        margin: 1rem 2rem;
+    }
+
+    &__texto { 
+        margin-bottom: 1rem;
+    }
+}

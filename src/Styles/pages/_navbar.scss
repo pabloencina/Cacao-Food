@@ -1,0 +1,23 @@
+.navbar{
+  
+    &__search{
+        width: 25px;
+    };
+    &__container_icons_buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    };
+    &__shoppingCart{
+        
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__container_mi_perfil{
+        display: flex;
+        justify-content: start;
+        width: 100px;
+    }
+}

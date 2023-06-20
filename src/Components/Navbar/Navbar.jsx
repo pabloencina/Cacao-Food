@@ -1,9 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "../../Css/search.css";
 import shoppingCart from "../../Images/shopping-cart.svg";
-import "../../Css/shoppingCart.css";
 import Search from "./Search";
 import { useState } from "react";
 import dataMenu from "../../Data/dataMenu";
@@ -24,11 +22,11 @@ function NavbarComponent() {
     <>
       <Navbar bg="light" variant="light">
         <Container>
-          <Navbar.Brand title="Inicio" href="inicio">
+          <Navbar.Brand title="Inicio" href="/">
             Logo
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="inicio">Inicio</Nav.Link>
+            <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="menu">Menú</Nav.Link>
             <Nav.Link href="nuestra-historia">Nuestra Historia</Nav.Link>
             <Nav.Link href="clientes">Clientes</Nav.Link>

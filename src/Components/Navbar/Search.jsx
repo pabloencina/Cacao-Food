@@ -33,6 +33,7 @@ const Search = ({ onSearch }) => {
             className="searchButton"
             src={search}
             alt="search"
+            style={{ width: "25px" }}
           />
         </Button>
         {showInput && (

@@ -3,7 +3,6 @@ import Instagram from "../../Images/instagram.svg";
 import Facebook from "../../Images/facebook.svg";
 import WhatsApp from "../../Images/whatsapp.svg";
 import { Button, NavLink } from "react-bootstrap";
-import "../../Css/form.css";
 
 const Contactanos = () => {
   return (

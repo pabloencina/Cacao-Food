@@ -30,10 +30,10 @@ const Search = ({ onSearch }) => {
         >
           <img
             title="Búsqueda"
-            className="searchButton"
+            className="navbar__search"
             src={search}
             alt="search"
-            style={{ width: "25px" }}
+            //style={{ width: "25px" }}
           />
         </Button>
         {showInput && (

@@ -20,7 +20,7 @@ function NavbarComponent() {
 
   return (
     <>
-      <Navbar bg="light" variant="light">
+      <Navbar bg="light" variant="light" className="navbar">
         <Container>
           <Navbar.Brand title="Inicio" href="/">
             Logo
@@ -33,25 +33,15 @@ function NavbarComponent() {
             <Nav.Link href="contactanos">Contáctenos</Nav.Link>
           </Nav>
         </Container>
-        <Container>
-          <Nav.Link
-            style={{
-              width: "450px",
-              marginLeft: "30px",
-            }}
-            href=""
-          >
+        <Container className="navbar__container_icons_buttons">
+          <Nav.Link href="">
             <div className="d-flex justify-content-end">
               <Search onSearch={handleSearch} />
               {searchResults.map((menu) => (
                 <div key={menu.id}>{menu.name}</div>
               ))}
-              <div
-                className="d-flex justify-content-end"
-                style={{ alignItems: "center" }}
-              >
+              <div className="navbar__shoppingCart">
                 <img
-                  className="shoppingCartButton"
                   src={shoppingCart}
                   alt="shoppingCart"
                   title="Carrito de Compras"
@@ -60,7 +50,7 @@ function NavbarComponent() {
             </div>
           </Nav.Link>
 
-          <Nav.Link href="#home" style={{ width: "100px" }}>
+          <Nav.Link href="#home" className="navbar__container_mi_perfil">
             Mi perfil
           </Nav.Link>
         </Container>

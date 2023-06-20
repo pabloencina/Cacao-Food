@@ -10,41 +10,19 @@ const Contactanos = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <div
-              style={{
-                //backgroundColor: "red",
-                height: "100px",
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
+            <div className="contactanos__title_box">
               <h1>Contactanos</h1>
             </div>
           </div>
           <div className="col-md-6">
             <div>
-              <div
-                style={{
-                  //backgroundColor: "red",
-                  height: "100px",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
+              <div className="contactanos__text_box">
                 <p>
                   Puedes comunicarte con nosotros a traves de nuestras redes
                   sociales:
                 </p>
               </div>
-              <div
-                className="container"
-                style={{
-                  height: "100px",
-                  //backgroundColor: "red",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
+              <div className="contactanos__icons_box">
                 <div className="row">
                   <div className="col-md-4">
                     <NavLink>
@@ -76,32 +54,36 @@ const Contactanos = () => {
                 </div>
               </div>
               <div>
-                <div>
+                <div className="contactanos__text_box">
                   <p>O déjanos un comentario en el siguiente formulario:</p>
                 </div>
-                <p>Nombre y apellido</p>
+                <div className="contactanos__text_input_box">
+                  <p>Nombre y apellido</p>
+                </div>
+
                 <div>
                   <input
-                    style={{ width: "450px", borderRadius: "5px" }}
-                    placeholder="Ingrese tu nombre: Ej Maria Perez"
+                    className="contactanos__input_box"
+                    placeholder="   Ingresa tu nombre: Ej Maria Perez"
                   />
                 </div>
-                <p>Correo Electrónico</p>
+                <div className="contactanos__text_input_box">
+                  <p>Correo Electrónico</p>
+                </div>
                 <div>
                   <input
-                    style={{ width: "450px", borderRadius: "5px" }}
-                    placeholder="Ingrese tu correo electrónico: maria_perez@gmail.com"
+                    className="contactanos__input_box"
+                    placeholder="   Ingresa tu correo electrónico: maria_perez@gmail.com"
                   />
                 </div>
                 <div>
-                  <p>Mensaje:</p>
+                  <div className="contactanos__text_input_box">
+                    <p>Mensaje:</p>
+                  </div>
                   <div>
                     <textarea
-                      style={{
-                        width: "450px",
-                        height: "200px",
-                        borderRadius: "15px",
-                      }}
+                      className="contactanos__text_area_box"
+                      placeholder="  Ingresa tu mensaje aquí"
                     />
                   </div>
                 </div>
@@ -115,18 +97,11 @@ const Contactanos = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div
-                style={{
-                  //backgroundColor: "red",
-                  height: "100px",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
+              <div className="contactanos__title_box">
                 <h1>Dirección</h1>
               </div>
 
-              <p>
+              <p className="contactanos__text_box">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
                 ab eum iste veritatis? Iste nostrum similique natus soluta,
                 quae, facere incidunt rem a mollitia placeat, asperiores

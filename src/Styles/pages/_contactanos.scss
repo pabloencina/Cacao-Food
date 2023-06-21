@@ -1,16 +1,16 @@
 .contactanos{
     &__title_box{
-        height: 100px;
+        height: 6rem;
         display: flex;
         align-items: center;
     };
     &__text_box{
-        height: 100px;
+        height:  6rem;
         display: flex;
         align-items: center;
     };
     &__icons_box{
-        height: 100px;
+        height:  6rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -20,18 +20,18 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        height: 80px;
+        height:  6rem;
     };
     &__text_area_box{
-        width: 450px;
-        height: 200px;
-        border-radius: 15px;
+        width: 28rem;
+        height: 12rem;
+        border-radius: 1rem;
         border: 1px solid;
     };
     &__input_box{
-        width: 450px;
-        height: 50px;
-        border-radius: 15px;
+        width: 28rem;
+        height: 3rem;
+        border-radius: 1rem;
         border: 1px solid;
     }
 }

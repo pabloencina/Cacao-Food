@@ -23,11 +23,8 @@ const Search = ({ onSearch }) => {
 
   return (
     <Container>
-      <div className="d-flex justify-content-end" style={{ width: "400px" }}>
-        <Button
-          onClick={handleOnClick}
-          style={{ backgroundColor: "inherit", border: "none" }}
-        >
+      <div className="search__container">
+        <Button onClick={handleOnClick} className="search__button">
           <img
             title="Búsqueda"
             className="navbar__search"

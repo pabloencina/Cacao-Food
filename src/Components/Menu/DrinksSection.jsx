@@ -7,24 +7,10 @@ import MenuSections from "./MenuSections";
 const DrinksSection = () => {
   return (
     <Container>
-      <div
-        className="d-flex justify-content-center"
-        style={{
-          height: "150px",
-          alignContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <div className="menu__container_title">
         <h1>Bebidas</h1>
       </div>
-      <div
-        className="d-flex justify-content-center"
-        style={{
-          height: "100px",
-          alignContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <div className="menu__container_text">
         <div style={{ width: "500px" }}>
           <p>
             Los platos saludables son aquellos que están equilibrados en

@@ -36,7 +36,7 @@ const Search = ({ onSearch }) => {
         {showInput && (
           <Form.Control
             //onSubmit={handleSubmit}
-            style={{ width: "300px" }}
+            className="search__input"
             type="text"
             value={inputValue}
             onChange={handleInputChange}

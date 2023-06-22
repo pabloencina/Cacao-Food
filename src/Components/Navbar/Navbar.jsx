@@ -5,6 +5,8 @@ import shoppingCart from "../../Images/shopping-cart.svg";
 import Search from "./Search";
 import { useState } from "react";
 import dataMenu from "../../Data/dataMenu";
+import "../../Css/active.css";
+import { NavLink } from "react-router-dom";
 
 function NavbarComponent() {
   const [searchResults, setSearchResults] = useState([]);
@@ -17,45 +19,88 @@ function NavbarComponent() {
 
     setSearchResults(dataMenu);
   };
-
   return (
-    <>
-      <Navbar bg="light" variant="light" className="navbar">
-        <Container>
-          <Navbar.Brand title="Inicio" href="/">
-            Logo
-          </Navbar.Brand>
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      <Container>
+        <Navbar.Brand href="/" activeClassName="active">
+          Logo
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Inicio</Nav.Link>
-            <Nav.Link href="menu">Menú</Nav.Link>
-            <Nav.Link href="nuestra-historia">Nuestra Historia</Nav.Link>
-            <Nav.Link href="clientes">Clientes</Nav.Link>
-            <Nav.Link href="contactanos">Contáctenos</Nav.Link>
+            <NavLink
+              className="navbar__link"
+              to={"/"}
+              href="/"
+              activeClassName="active"
+            >
+              Inicio
+            </NavLink>
+            <NavLink
+              className="navbar__link"
+              to={"/menu"}
+              href="menu"
+              activeClassName="active"
+            >
+              Menú
+            </NavLink>
+            <NavLink
+              className="navbar__link"
+              to={"/nuestra-historia"}
+              href="nuestra-historia"
+              activeClassName="active"
+            >
+              Nuestra Historia
+            </NavLink>
+            <NavLink
+              className="navbar__link"
+              to={"/clientes"}
+              href="clientes"
+              activeClassName="active"
+            >
+              Clientes
+            </NavLink>
+            <NavLink
+              className="navbar__link"
+              to={"/contactanos"}
+              href="contactanos"
+              activeClassName="active"
+            >
+              Contáctenos
+            </NavLink>
           </Nav>
-        </Container>
-        <Container className="navbar__container_icons_buttons">
-          <Nav.Link href="">
-            <div className="d-flex justify-content-end">
-              <Search onSearch={handleSearch} />
-              {searchResults.map((menu) => (
-                <div key={menu.id}>{menu.name}</div>
-              ))}
-              <div className="navbar__shoppingCart">
-                <img
-                  src={shoppingCart}
-                  alt="shoppingCart"
-                  title="Carrito de Compras"
-                />
-              </div>
-            </div>
-          </Nav.Link>
+          <Nav>
+            <Container className="navbar__container_icons_buttons">
+              <NavLink href="">
+                <div className="d-flex justify-content-end">
+                  <Search onSearch={handleSearch} />
+                  {searchResults.map((menu) => (
+                    <div key={menu.id}>{menu.name}</div>
+                  ))}
+                  <NavLink>
+                    <div className="navbar__shoppingCart">
+                      <img
+                        src={shoppingCart}
+                        alt="shoppingCart"
+                        title="Carrito de Compras"
+                      />
+                    </div>
+                  </NavLink>
+                </div>
+              </NavLink>
 
-          <Nav.Link href="#home" className="navbar__container_mi_perfil">
-            Mi perfil
-          </Nav.Link>
-        </Container>
-      </Navbar>
-    </>
+              <NavLink
+                className="navbar__link"
+                to={"/mi-perfil"}
+                href="/mi-perfil"
+              >
+                Mi perfil
+              </NavLink>
+            </Container>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

@@ -4,71 +4,39 @@ import { NavLink } from "react-router-dom";
 
 const MenuSections = () => {
   return (
-    <div
-      className="d-flex justify-content-center"
-      style={{
-        height: "100px",
-        alignContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="menu_section__container_link_menu">
       <NavLink
         to={"/menu"}
         activeClassName="active"
-        style={{
-          margin: "15px",
-          backgroundColor: "white",
-          color: "black",
-          textDecoration: "none",
-        }}
+        className="menu_section__link_menu"
       >
         Platos
       </NavLink>
       <NavLink
         activeClassName="active"
         to={"/ensaladas"}
-        style={{
-          margin: "15px",
-          backgroundColor: "white",
-          color: "black",
-          textDecoration: "none",
-        }}
+        className="menu_section__link_menu"
       >
         Ensaladas
       </NavLink>
       <NavLink
         to={"/postres"}
         activeClassName="active"
-        style={{
-          margin: "15px",
-          backgroundColor: "white",
-          color: "black",
-          textDecoration: "none",
-        }}
+        className="menu_section__link_menu"
       >
         Postres
       </NavLink>
       <NavLink
         activeClassName="active"
         to={"/cremas"}
-        style={{
-          margin: "15px",
-          backgroundColor: "white",
-          color: "black",
-          textDecoration: "none",
-        }}
+        className="menu_section__link_menu"
       >
         Cremas
       </NavLink>
       <NavLink
         activeClassName="active"
         to={"/bebidas"}
-        style={{
-          margin: "15px",
-          backgroundColor: "white",
-          color: "black",
-          textDecoration: "none",
-        }}
+        className="menu_section__link_menu"
       >
         Bebidas
       </NavLink>

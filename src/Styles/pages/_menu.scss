@@ -1,0 +1,88 @@
+.menu{
+    &__container_title{
+        height: 9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    };
+    &__container_text{
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    };
+}
+
+.menu_section{
+   &__container_link_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+   } ;
+   &__link_menu{
+    margin: 1rem;
+    background-color: white;
+    color: black;
+   }
+}
+
+.card_menu{
+    &__container{
+        margin-bottom:3.5rem ;
+        width: 18rem;
+        height:31rem ;
+    };
+    &__container_menu_name_price{
+        display: flex;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
+    };
+    &__price{
+        display: flex;
+        justify-content: end;
+        width: 6rem;
+    };
+    &__container_description{
+        display: flex;
+        justify-content: center;
+        height:12rem ;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+@media screen  and (max-width:412px){
+    .menu{
+        &__container_title{
+            width: 100%;
+            height: 4.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        };
+        &__container_text{
+            width: 100%;
+            height: 11rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        };
+    }
+    .menu_section{
+        &__container_link_menu{
+         display: flex;
+        align-items: center;
+         justify-content: center;
+         height: 6rem;
+         width:100%
+         
+        } ;
+        &__link_menu{
+            margin: 0.4rem;
+         color: black;
+        font-size: 1rem;
+        }
+     }
+}

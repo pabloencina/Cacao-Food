@@ -27,7 +27,7 @@ const Contactanos = () => {
                   <div className="col-md-4">
                     <NavLink>
                       <img
-                        style={{ width: "50px" }}
+                        className="contactanos__icons"
                         src={Instagram}
                         alt="Instagram"
                       />
@@ -36,7 +36,7 @@ const Contactanos = () => {
                   <div className="col-md-4">
                     <NavLink>
                       <img
-                        style={{ width: "50px" }}
+                        className="contactanos__icons"
                         src={Facebook}
                         alt="Facebook"
                       />
@@ -45,7 +45,7 @@ const Contactanos = () => {
                   <div className="col-md-4">
                     <NavLink>
                       <img
-                        style={{ width: "50px" }}
+                        className="contactanos__icons"
                         src={WhatsApp}
                         alt="WhatsApp"
                       />
@@ -87,7 +87,11 @@ const Contactanos = () => {
                     />
                   </div>
                 </div>
-                <Button>Enviar Formulario</Button>
+                <div className="contactanos__box_button_enviar">
+                  <Button className="contactanos__button_enviar">
+                    Enviar Formulario
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

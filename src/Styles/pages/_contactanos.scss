@@ -1,37 +1,105 @@
 .contactanos{
     &__title_box{
-        height: 100px;
+        height: 6rem;
         display: flex;
         align-items: center;
     };
     &__text_box{
-        height: 100px;
+        height:  6rem;
         display: flex;
         align-items: center;
     };
     &__icons_box{
-        height: 100px;
+        height:  6rem;
         display: flex;
         align-items: center;
         justify-content: center;
+    };
+    &__icons{
+        width: 3rem;
     };
     &__text_input_box{
         
         display: flex;
         align-items: center;
         justify-content: start;
-        height: 80px;
+        height:  6rem;
     };
     &__text_area_box{
-        width: 450px;
-        height: 200px;
-        border-radius: 15px;
+        width: 28rem;
+        height: 12rem;
+        border-radius: 1rem;
         border: 1px solid;
     };
     &__input_box{
-        width: 450px;
-        height: 50px;
-        border-radius: 15px;
+        width: 28rem;
+        height: 3rem;
+        border-radius: 1rem;
         border: 1px solid;
+    };
+    &__box_button_enviar{
+        //height: 5rem;
+        display: flex;
+        //justify-content: center;
+        background-color: inherit;
+    };
+    &__button_enviar{
+        background-color: inherit;
+        color: black;
+    }
+}
+
+@media screen  and (max-width:412px){
+    .contactanos{
+        &__title_box{
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        };
+        &__text_box{
+            height:  6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        };
+        &__icons_box{
+            height:  6rem;
+            width: 100%;
+            display:flex;
+            //align-items: center;
+            //justify-content: center;
+        };
+        &__icons{
+            width: 2rem;
+        };
+        &__text_input_box{
+            display: flex;
+            align-items: center;
+            //justify-content: center;
+            height:  3rem;
+        };
+        &__text_area_box{
+            width: 100%;
+            height: 12rem;
+            border-radius: 1rem;
+            border: 1px solid;
+        };
+        &__input_box{
+            width: 100%;
+            height: 3rem;
+            border-radius: 1rem;
+            border: 1px solid;
+        };
+        &__box_button_enviar{
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            background-color: inherit;
+        };
+        &__button_enviar{
+            background-color: inherit;
+            color: black;
+        }
     }
 }

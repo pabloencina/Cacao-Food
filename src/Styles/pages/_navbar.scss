@@ -1,7 +1,7 @@
 .navbar{
   
     &__search{
-        width: 25px;
+        width: 1.5rem;
     };
     &__container_icons_buttons{
         display: flex;
@@ -9,15 +9,107 @@
         align-items: center;
     };
     &__shoppingCart{
-        
-        width: 25px;
+        width: 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100%;
     }
     &__container_mi_perfil{
         display: flex;
         justify-content: start;
-        width: 100px;
+        width: 6rem;
+    };
+    &__link{
+        margin: 0.5rem;
+    background-color: inherit;
+    color: black;
+    display: flex;
+    align-items: center;
+    }
+}
+
+.search{
+    &__container{
+        display: flex;
+        justify-content: end;
+        width: 25rem;
+    };
+    &__button{
+        background-color: inherit;
+        border: none;
+    }
+    &__input{
+                width: 18 rem;
+            }
+}
+
+.menuBurger{
+    &__container{
+        display: none;
+        width: 1rem;
+    };
+}
+
+@media screen  and (max-width:412px){
+    .navbar{
+        
+        &__search{
+            width: 1.5rem;
+        };
+        &__container_icons_buttons{
+            margin-right: 1.5rem;
+            display: block;
+        };
+        &__shoppingCart{
+            width: 1.5rem;
+        }
+        &__container_mi_perfil{
+            width: 6rem;
+        }
+
+        .search{
+            &__container{
+                width: 100%;
+            };
+            &__button{
+                background-color: inherit;
+                border: none;
+                display: flex;
+                justify-content: center
+            };
+            &__input{
+                display: none;
+            }
+        }
+    
+.menuBurger{
+    &__container{
+        display:block;
+         position: relative;
+         bottom: 3rem;
+        img{
+            position: absolute;
+            width: 1.2rem;
+            margin-left: 9.5rem;
+            display: block;
+
+        }
+
+        img:first-child{
+            z-index: 1;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+
+        img:last-child{
+            z-index: 2;
+            top: 1rem;
+            left: 1rem;
+            display: block;
+        }
+    };
+}
     }
 }

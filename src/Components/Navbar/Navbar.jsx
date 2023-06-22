@@ -24,8 +24,8 @@ function NavbarComponent() {
     <>
       <Navbar expand="lg" bg="light" variant="light" className="navbar">
         <Container className="menuBurger__container">
-          <Nav.Link className="menuBurger__icon_burger">
-            <div className="navbar__shoppingCart">
+          <Nav.Link>
+            <div className="menuBurger__icon_burger">
               <img
                 src={menuBurger}
                 alt="Menu burger"
@@ -33,8 +33,8 @@ function NavbarComponent() {
               />
             </div>
           </Nav.Link>
-          <Nav.Link className="menuBurger__icon_close">
-            <div className="navbar__shoppingCart">
+          <Nav.Link>
+            <div className="menuBurger__icon_close">
               <img src={close} alt="Close" title="cerrar" />
             </div>
           </Nav.Link>

@@ -5,6 +5,8 @@ import shoppingCart from "../../Images/shopping-cart.svg";
 import Search from "./Search";
 import { useState } from "react";
 import dataMenu from "../../Data/dataMenu";
+import "../../Css/active.css";
+import { NavLink } from "react-router-dom";
 
 function NavbarComponent() {
   const [searchResults, setSearchResults] = useState([]);
@@ -20,25 +22,62 @@ function NavbarComponent() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="#home">Logo</Navbar.Brand>
+        <Navbar.Brand href="/" activeClassName="active">
+          Logo
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Inicio</Nav.Link>
-            <Nav.Link href="menu">Menú</Nav.Link>
-            <Nav.Link href="nuestra-historia">Nuestra Historia</Nav.Link>
-            <Nav.Link href="clientes">Clientes</Nav.Link>
-            <Nav.Link href="contactanos">Contáctenos</Nav.Link>
+            <NavLink
+              className="navbar__link"
+              to={"/"}
+              href="/"
+              activeClassName="active"
+            >
+              Inicio
+            </NavLink>
+            <NavLink
+              className="navbar__link"
+              to={"/menu"}
+              href="menu"
+              activeClassName="active"
+            >
+              Menú
+            </NavLink>
+            <NavLink
+              className="navbar__link"
+              to={"/nuestra-historia"}
+              href="nuestra-historia"
+              activeClassName="active"
+            >
+              Nuestra Historia
+            </NavLink>
+            <NavLink
+              className="navbar__link"
+              to={"/clientes"}
+              href="clientes"
+              activeClassName="active"
+            >
+              Clientes
+            </NavLink>
+            <NavLink
+              className="navbar__link"
+              to={"/contactanos"}
+              href="contactanos"
+              activeClassName="active"
+            >
+              Contáctenos
+            </NavLink>
           </Nav>
           <Nav>
             <Container className="navbar__container_icons_buttons">
-              <Nav.Link href="">
+              <NavLink href="">
                 <div className="d-flex justify-content-end">
                   <Search onSearch={handleSearch} />
                   {searchResults.map((menu) => (
                     <div key={menu.id}>{menu.name}</div>
                   ))}
-                  <Nav.Link>
+                  <NavLink>
                     <div className="navbar__shoppingCart">
                       <img
                         src={shoppingCart}
@@ -46,13 +85,17 @@ function NavbarComponent() {
                         title="Carrito de Compras"
                       />
                     </div>
-                  </Nav.Link>
+                  </NavLink>
                 </div>
-              </Nav.Link>
+              </NavLink>
 
-              <Nav.Link href="#home" className="navbar__container_mi_perfil">
+              <NavLink
+                className="navbar__link"
+                to={"/mi-perfil"}
+                href="/mi-perfil"
+              >
                 Mi perfil
-              </Nav.Link>
+              </NavLink>
             </Container>
           </Nav>
         </Navbar.Collapse>

@@ -9,7 +9,6 @@
         align-items: center;
     };
     &__shoppingCart{
-        
         width: 1.5rem;
         display: flex;
         justify-content: center;
@@ -20,6 +19,13 @@
         display: flex;
         justify-content: start;
         width: 6rem;
+    };
+    &__link{
+        margin: 0.5rem;
+    background-color: inherit;
+    color: black;
+    display: flex;
+    align-items: center;
     }
 }
 

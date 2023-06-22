@@ -33,3 +33,42 @@
         border: none;
     }
 }
+.menuBurger{
+    &__container{
+        display: none;
+        background-color: red;
+        width: 1rem;
+    };
+    &__icon_close{
+        display: none;
+    };
+    &__icon_burger{
+        display: none;
+    }
+}
+
+@media screen  and (max-width:412px){
+.menuBurger{
+    &__container{
+        display:inline-block;
+         position: relative;
+        img{
+            position: absolute;
+            width: 1.2rem;
+            margin-left: 18rem;
+        }
+
+        img:first-child{
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
+
+        img:last-child{
+            z-index: 2;
+            top: 1rem;
+            left: 1rem;
+        }
+    }
+}
+}

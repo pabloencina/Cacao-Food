@@ -2,6 +2,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import shoppingCart from "../../Images/shopping-cart.svg";
+import close from "../../Images/close.svg";
+import menuBurger from "../../Images/menuBurger.svg";
 import Search from "./Search";
 import { useState } from "react";
 import dataMenu from "../../Data/dataMenu";
@@ -20,12 +22,28 @@ function NavbarComponent() {
 
   return (
     <>
-      <Navbar bg="light" variant="light" className="navbar">
-        <Container>
+      <Navbar expand="lg" bg="light" variant="light" className="navbar">
+        <Container className="menuBurger__container">
+          <Nav.Link className="menuBurger__icon_burger">
+            <div className="navbar__shoppingCart">
+              <img
+                src={menuBurger}
+                alt="Menu burger"
+                //title="Carrito de Compras"
+              />
+            </div>
+          </Nav.Link>
+          <Nav.Link className="menuBurger__icon_close">
+            <div className="navbar__shoppingCart">
+              <img src={close} alt="Close" title="cerrar" />
+            </div>
+          </Nav.Link>
+        </Container>
+        <Container fluid>
           <Navbar.Brand title="Inicio" href="/">
             Logo
           </Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="ml-auto">
             <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="menu">Menú</Nav.Link>
             <Nav.Link href="nuestra-historia">Nuestra Historia</Nav.Link>

@@ -3,6 +3,7 @@ import Instagram from "../../Images/instagram.svg";
 import Facebook from "../../Images/facebook.svg";
 import WhatsApp from "../../Images/whatsapp.svg";
 import { Button, NavLink } from "react-bootstrap";
+import GoogleMap from "../Google map/GoogleMap";
 
 const Contactanos = () => {
   return (
@@ -111,6 +112,11 @@ const Contactanos = () => {
                 quae, facere incidunt rem a mollitia placeat, asperiores
                 distinctio obcaecati in sequi.
               </p>
+              <div>
+                <div className="container">
+                  <GoogleMap />
+                </div>
+              </div>
             </div>
           </div>
         </div>

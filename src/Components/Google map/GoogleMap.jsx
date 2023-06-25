@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import { Map, GoogleApiWrapper } from "google-maps-react";
 
 const GoogleMap = (props) => {
@@ -24,4 +24,4 @@ const GoogleMap = (props) => {
 
 export default GoogleApiWrapper({
   apiKey: "",
-})(GoogleMap);
+})(GoogleMap); */

@@ -1,34 +1,37 @@
 .home {
-    margin: 3rem 0;
-
-    &__division{
-        margin: 0 2rem;
-    }
-
+    margin: 2rem 0;
+    
     &__presentacion {
-        display: flex;
-        flex-direction: column;
-        justify-self: flex-start;
-        align-self: center;
-
+        text-align: left;
+        margin: auto 0;
+        
         &--button {
             background-color: $colorFondoNavbar;
             color: $colorTexto;
             font-weight: bold;
             align-self: flex-start;
-            margin-top: 2rem;
+            margin-top: 1rem;
+        }
+        
+        &--img{
+            margin: 2rem 0;
+            text-align: right;
         }
     }
+    
 
-    &__titulo {
+    &__plato {
         margin: 1rem 0;
     }
 
-    &__plato {
-        margin: 1rem 2rem;
-    }
+    &__nosotros {
 
-    &__texto { 
-        margin-bottom: 1rem;
+        &--titulo {
+            margin-bottom: 1rem;
+        }
+    
+        &--texto { 
+            margin-bottom: 1rem;
+        }
     }
 }

@@ -1,27 +1,27 @@
 .clientes {
 
-    margin: 2rem;
+    margin: 2rem 0;
 
     &__titulos {
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
 
     &__nuestrosClientesContainer {
-        position: relative;
-        margin: 0 3rem;
+        margin: auto;
 
         &--texto {
-            position: absolute;
-            top: 50%;
-            transform: translate(0, -50%);
+            margin: 1rem 0;
         }
     }
 
     &__clienteContainer {
-        margin: 0 2rem;
-        padding: 1rem;
-        border-radius: 10px;
-        background-color: $colorFondoNavbar;
+
+        &--individual {
+            margin: 1rem 0.5rem;
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: $colorFondoNavbar;
+        }
 
         &--perfil {
             display: flex;

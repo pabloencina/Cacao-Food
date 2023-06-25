@@ -14,7 +14,7 @@ function Clientes() {
                     </p>
                 </Col>
                 <Col xs={12} md={6} className='clientes__nuestrosClientesContainer clientes__nuestrosClientesContainer--img'>
-                    <Image className='clientes__nuestrosClientesContainer--img' src="/multimedia/imagen_prueba.jpg" rounded fluid />
+                    <Image src="/multimedia/imagen_prueba.jpg" rounded fluid />
                 </Col>
             </Row>
             <Row className="justify-content-center clientes">

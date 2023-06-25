@@ -13,8 +13,8 @@ function Clientes() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id ligula fermentum, suscipit est congue, eleifend neque. Vestibulum tempus, sem in tincidunt lobortis, ligula tortor consectetur tortor, a gravida mauris justo ac diam.
                     </p>
                 </Col>
-                <Col xs={12} md={6} className='clientes__nuestrosClientesContainer'>
-                    <Image src="/multimedia/imagen_prueba.jpg" rounded fluid />
+                <Col xs={12} md={6} className='clientes__nuestrosClientesContainer clientes__nuestrosClientesContainer--img'>
+                    <Image className='clientes__nuestrosClientesContainer--img' src="/multimedia/imagen_prueba.jpg" rounded fluid />
                 </Col>
             </Row>
             <Row className="justify-content-center clientes">

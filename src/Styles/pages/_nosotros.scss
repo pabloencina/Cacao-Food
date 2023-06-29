@@ -1,22 +1,19 @@
 .nosotros {
 
-    margin: 2rem 0;
+    margin: 3rem 0;
 
     &__titulos {
-        margin: 2rem 0;
+        margin: 1rem;
         text-align: center;
     }
 
     &__container {
-        position: relative;
+        margin: auto 0;
 
-        &--textos {
-            position: absolute;
-            top: 50%;
-            transform: translate(0, -50%);
+        &--img {
+            margin: 1rem 0;
+            text-align: center;
         }
-
     }
-
 
 }

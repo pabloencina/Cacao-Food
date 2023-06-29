@@ -8,8 +8,8 @@ function Nosotros() {
         <Container fluid>
             <Row className="justify-content-center nosotros">
                 <h2 className="nosotros__titulos">Sobre Nosotros</h2>
-                <Col xs={6} className='nosotros__container'>
-                    <p className='nosotros__container--textos'>
+                <Col xs={12} lg={6} className='nosotros__container'>
+                    <p>
                         Es muy común encontrar almuerzos o comidas con bajos
                         niveles nutritivos, es por ello que siempre a la hora de
                         almorzar en un día caluroso lleno trabajo, buscamos la
@@ -26,17 +26,17 @@ function Nosotros() {
                         lo orgánico y Saludable.
                     </p>
                 </Col>
-                <Col xs={6} md={4}>
+                <Col xs={12} lg={6} className='nosotros__container--img'>
                     <Image src="/multimedia/imagen_prueba.jpg" rounded fluid />
                 </Col>
             </Row>
             <Row className="justify-content-center nosotros">
                 <h2 className="nosotros__titulos">Misión</h2>
-                <Col xs={6} md={4}>
+                <Col xs={{ order: 2, span: 12 }} md={{ order: 1, span: 6 }} className='nosotros__container--img'>
                     <Image src="/multimedia/imagen_prueba.jpg" rounded fluid />
                 </Col>
-                <Col xs={6} className='nosotros__container'>
-                    <p className='nosotros__container--textos'>
+                <Col xs={{ order: 1, span: 12 }} md={{ order: 2, span: 6 }} className='nosotros__container'>
+                    <p>
                         Somos un restaurante que abastece la necesidad de
                         aportar platos hechos con amor y un alto nivel
                         nutritivo. Capaces de satisfacer las necesidades de nuestro
@@ -47,8 +47,8 @@ function Nosotros() {
             </Row>
             <Row className="justify-content-center nosotros">
                 <h2 className="nosotros__titulos">Visión</h2>
-                <Col xs={6} className='nosotros__container'>
-                    <p className='nosotros__container--textos'>
+                <Col xs={12} md={6} className='nosotros__container'>
+                    <p>
                         Nuestro objetivo principal es ser Líder en la
                         elaboración de comida saludable en toda la Región.
                         Crearemos canales de distribución ecológicos para ser
@@ -57,7 +57,7 @@ function Nosotros() {
                         tecnología, lo ecológico y lo orgánico.
                     </p>
                 </Col>
-                <Col xs={6} md={4}>
+                <Col xs={12} md={6} className='nosotros__container--img'>
                     <Image src="/multimedia/imagen_prueba.jpg" rounded fluid />
                 </Col>
             </Row>

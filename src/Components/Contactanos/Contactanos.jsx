@@ -3,7 +3,7 @@ import Instagram from "../../Images/instagram.svg";
 import Facebook from "../../Images/facebook.svg";
 import WhatsApp from "../../Images/whatsapp.svg";
 import { Button, NavLink } from "react-bootstrap";
-import GoogleMap from "../Google map/GoogleMap";
+import GoogleMap from "../Google-map/GoogleMap";
 
 const Contactanos = () => {
   return (

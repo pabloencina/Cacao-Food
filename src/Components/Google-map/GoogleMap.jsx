@@ -1,4 +1,4 @@
-/* import React from "react";
+import React from "react";
 import { Map, GoogleApiWrapper } from "google-maps-react";
 
 const GoogleMap = (props) => {
@@ -15,8 +15,8 @@ const GoogleMap = (props) => {
       zoom={14}
       style={mapStyles}
       initialCenter={{
-        lat: -31.41395731358852, // -31.41395731358852, -64.17300169549533
-        lng: -64.17300169549533,
+        lat: 37.7749,
+        lng: -122.4194,
       }}
     />
   );
@@ -24,4 +24,4 @@ const GoogleMap = (props) => {
 
 export default GoogleApiWrapper({
   apiKey: "",
-})(GoogleMap); */
+})(GoogleMap);

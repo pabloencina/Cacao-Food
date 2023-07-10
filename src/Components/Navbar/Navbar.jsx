@@ -20,14 +20,14 @@ function NavbarComponent() {
     setSearchResults(dataMenu);
   };
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="/" activeClassName="active">
-          Logo
+          Cacao Food
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="navbar__container_button">
             <NavLink
               className="navbar__link"
               to={"/"}
@@ -90,11 +90,11 @@ function NavbarComponent() {
               </NavLink>
 
               <NavLink
-                className="navbar__link"
+                className="navbar__mi_perfil"
                 to={"/mi-perfil"}
                 href="/mi-perfil"
               >
-                Mi perfil
+                Mi Perfil
               </NavLink>
             </Container>
           </Nav>

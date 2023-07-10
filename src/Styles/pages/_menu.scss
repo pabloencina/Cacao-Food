@@ -1,9 +1,10 @@
 .menu{
     &__container_title{
-        height: 9rem;
+        height: 6rem;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
+        color: $colorPrimario;
     };
     &__container_text{
         height: 8rem;
@@ -14,17 +15,41 @@
 }
 
 .menu_section{
+    &__container{
+    display: flex;
+    justify-content: center;
+    height: 6.25rem;
+    }
    &__container_link_menu{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 6rem;
+    height: 4rem;
+    width: 31.25rem;
+    background-color: $colorFondoSecundario;
+    border-radius: 2rem;
+    
    } ;
+   &__button{
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    &:active{
+        background-color: $colorTerciario ;
+        
+       }
+   }
    &__link_menu{
     margin: 1rem;
-    background-color: white;
+    background-color: $colorFondoSecundario;
     color: black;
+    &:active{
+        background-color: $colorTerciario ;
+        
+       }
    }
+   
 }
 
 .card_menu{

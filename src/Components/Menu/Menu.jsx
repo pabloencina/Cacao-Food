@@ -7,18 +7,18 @@ function Menu() {
   return (
     <Container>
       <div className="menu__container_title">
-        <h1>Menúes</h1>
+        <h1>Menú</h1>
       </div>
 
       <div className="menu__container_text">
-        <div style={{ width: "500px" }}>
+        <div style={{ width: "1400px" }}>
           <p>
-            Los platos saludables son aquellos que están equilibrados en
-            nutrientes y proporcionan beneficios para la salud. Estos platos
-            suelen incluir una combinación de alimentos frescos, ricos en
-            vitaminas, minerales y fibra, y son bajos en grasas saturadas,
-            azúcares añadidos y sodio.
+            En CacaoFood nos interesa tu salud, por eso cocinamos nuestros
+            platos con productos de calidad, de proveedores locales y
+            confiables.
           </p>
+          <br></br>
+          <p>¡Nuestro menú te dejará sin palabras!</p>
         </div>
       </div>
       <MenuSections />

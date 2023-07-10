@@ -1,45 +1,57 @@
 import React from "react";
 import "../../Css/active.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const MenuSections = () => {
   return (
-    <div className="menu_section__container_link_menu">
-      <NavLink
-        to={"/menu"}
-        activeClassName="active"
-        className="menu_section__link_menu"
-      >
-        Platos
-      </NavLink>
-      <NavLink
-        activeClassName="active"
-        to={"/ensaladas"}
-        className="menu_section__link_menu"
-      >
-        Ensaladas
-      </NavLink>
-      <NavLink
-        to={"/postres"}
-        activeClassName="active"
-        className="menu_section__link_menu"
-      >
-        Postres
-      </NavLink>
-      <NavLink
-        activeClassName="active"
-        to={"/cremas"}
-        className="menu_section__link_menu"
-      >
-        Cremas
-      </NavLink>
-      <NavLink
-        activeClassName="active"
-        to={"/bebidas"}
-        className="menu_section__link_menu"
-      >
-        Bebidas
-      </NavLink>
+    <div className="menu_section__container">
+      <div className="menu_section__container_link_menu">
+        <div className="menu_section__button">
+          <Link
+            to={"/menu"}
+            //activeClassName="active_section"
+            className="menu_section__link_menu"
+          >
+            Platos
+          </Link>
+        </div>
+        <div className="menu_section__button">
+          <Link
+            //activeClassName="active_section"
+            to={"/ensaladas"}
+            className="menu_section__link_menu"
+          >
+            Ensaladas
+          </Link>
+        </div>
+        <div className="menu_section__button">
+          <Link
+            to={"/postres"}
+            //activeClassName="menu_section__active"
+            className="menu_section__link_menu"
+          >
+            Postres
+          </Link>
+        </div>
+        <div className="menu_section__button">
+          <Link
+            //activeClassName="menu_section__active"
+            to={"/cremas"}
+            className="menu_section__link_menu"
+          >
+            Cremas
+          </Link>
+        </div>
+        <div className="menu_section__button">
+          <Link
+            //activeClassName="active_section"
+            to={"/bebidas"}
+            className="menu_section__link_menu"
+          >
+            Bebidas
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

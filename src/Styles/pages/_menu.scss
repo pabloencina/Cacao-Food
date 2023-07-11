@@ -55,9 +55,14 @@
 .card_menu{
     &__container{
         margin-bottom:3.5rem ;
-        width: 18rem;
+        width: 20rem;
         height:31rem ;
+        border: none;
     };
+    &__image{
+        border-radius: 30px 70px 0px 70px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
     &__container_menu_name_price{
         display: flex;
         height: 4rem;
@@ -68,6 +73,8 @@
         display: flex;
         justify-content: end;
         width: 6rem;
+        color: $colorTerciario;
+        font-weight: bold
     };
     &__container_description{
         display: flex;
@@ -75,6 +82,22 @@
         height:12rem ;
         align-items: center;
         align-content: center;
+    }
+    &__container_button{
+        justify-content: end;
+        display: flex;
+        height: 4rem;
+    };
+    &__button {
+        background-color: $colorTerciario;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8.37rem;
+        height: 3rem;
+        border: 3px solid $colorPrimario;
+        border-radius: 2rem;
     }
 }
 

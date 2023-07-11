@@ -17,7 +17,7 @@ const CardMenu = ({ menu }) => {
         }}
       >
         <div className="card_menu__container_menu_name_price">
-          <h6 className="mr-3">{menu.name}</h6>
+          <p className="card_menu__name_title">{menu.name}</p>
           <p className="card_menu__price">$ {menu.price}</p>
         </div>
         <div className="card_menu__container_description">

@@ -11,6 +11,7 @@ import "./Styles/App.scss";
 import Home from "./Components/Inicio/Home";
 import Nosotros from "./Components/Nuestra-Historia/Nosotros";
 import Clientes from "./Components/Clientes/Clientes";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/clientes" element={<Clientes />} />
         <Route path="/contactanos" element={<Contactanos />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

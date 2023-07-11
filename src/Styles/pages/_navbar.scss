@@ -1,13 +1,18 @@
 .navbar{
-  background-color: $colorFondoSecundario;
-  height: 80px;
+        background-color: $colorFondoSecundario;
+        width: 90rem;
+        height: 5.30rem;
+
+  &__container_logo{
+   // background-color: blue;
+    
+  }      
   &__container_button{
-    height: 30px;
+    height: 2rem;
     display: flex;
-    justify-content: space-between;
   }
     &__search{
-        width: 1.5rem;
+        width: 1.75rem;
     };
     &__container_icons_buttons{
         display: flex;
@@ -15,7 +20,7 @@
         align-items: center;
     };
     &__shoppingCart{
-        width: 1.5rem;
+        width: 1.75rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -28,11 +33,13 @@
     };
     &__link{
         margin: 0.5rem;
-    color: black;
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    white-space: nowrap;
+        color: black;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        white-space: nowrap;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
     }
     &__mi_perfil{
         margin: 0.5rem;
@@ -45,7 +52,8 @@
         height: 3rem;
         border: 3px solid $colorPrimario;
         border-radius: 2rem;
-        
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
     }
 }
 
@@ -53,14 +61,15 @@
     &__container{
         display: flex;
         justify-content: end;
-        width: 25rem;
+        width: 24rem;
+        
     };
     &__button{
         background-color: inherit;
         border: none;
     }
     &__input{
-                width: 18 rem;
+                width: 16rem;
             }
 }
 

@@ -1,0 +1,31 @@
+.footer{
+        
+    &__container{
+        width: 90rem;
+        height: 5.30rem;
+        background-color:$colorPrimario ;
+        display: flex;
+        justify-content:end;
+        align-items: center;
+    };
+    &__container_social_media{
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem
+    };
+    &__social_media_Instagram{
+        color: #F2FFF5;
+        background-color: inherit;
+        border: initial;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        
+    };
+    &__social_media_Facebook{
+        color: #F2FFF5;
+        background-color: inherit;
+        border: initial;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    };
+}

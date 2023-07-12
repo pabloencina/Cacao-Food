@@ -36,6 +36,9 @@
         white-space: nowrap;
         font-family: 'Montserrat', sans-serif;
         font-size: 25px;
+        &:hover{
+            color:$colorTerciario
+        }
     }
     &__mi_perfil{
         margin: 0.5rem;
@@ -50,6 +53,10 @@
         border-radius: 2rem;
         font-family: 'Montserrat', sans-serif;
         font-size: 25px;
+        &:hover{
+            background-color: white;
+            color:$colorPrimario
+        }
     }
 }
 
@@ -63,6 +70,10 @@
     &__button{
         background-color: inherit;
         border: none;
+        &:hover{
+            color:$colorTerciario;
+            background-color: inherit;
+        }
     }
     &__input{
                 width: 16rem;

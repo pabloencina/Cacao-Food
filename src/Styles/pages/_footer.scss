@@ -11,7 +11,7 @@
     &__container_social_media{
         display: flex;
         flex-direction: column;
-        margin-right: 3rem
+        margin-right: 4rem
     };
     &__social_media_Instagram{
         color: #F2FFF5;
@@ -19,6 +19,9 @@
         border: initial;
         font-family: 'Montserrat', sans-serif;
         font-size: 18px;
+        &:hover{
+            color:black
+        }
         
     };
     &__social_media_Facebook{
@@ -27,13 +30,14 @@
         border: initial;
         font-family: 'Montserrat', sans-serif;
         font-size: 18px;
+        &:hover{
+            color:black
+        }
     };
     &__image_Facebook{
         width: 1.5rem;
-        //background-color: #F2FFF5;
     };
     &__image_Instagram{
         width: 1.5rem;
-        //background-color: #F2FFF5;
     }
 }

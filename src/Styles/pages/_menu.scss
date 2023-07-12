@@ -57,6 +57,9 @@
     &:active{
         background-color: $colorTerciario ;
        }
+    &:hover{
+        color: $colorPrimario;
+    }
    }
    
 }
@@ -118,6 +121,11 @@
         height: 3rem;
         border: 3px solid $colorPrimario;
         border-radius: 2rem;
+        &:hover{
+            background-color: white;
+            color:$colorPrimario;
+            border: 3px solid $colorPrimario;
+        }
     }
 }
 

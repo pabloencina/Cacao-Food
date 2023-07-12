@@ -1,17 +1,19 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import CardMenu from "./CardMenu";
 import dataMenu from "../../Data/dataMenu";
 import MenuSections from "./MenuSections";
 
 function Menu() {
   return (
-    <Container>
+    <div>
       <div className="menu__container_title">
         <h1>Menú</h1>
       </div>
 
       <div className="menu__container_text">
-        <div style={{ width: "1400px" }}>
+        <div
+        //  style={{ width: "1400px" }}
+        >
           <p>
             En CacaoFood nos interesa tu salud, por eso cocinamos nuestros
             platos con productos de calidad, de proveedores locales y
@@ -31,7 +33,7 @@ function Menu() {
           ))}
         </Row>
       </div>
-    </Container>
+    </div>
   );
 }
 

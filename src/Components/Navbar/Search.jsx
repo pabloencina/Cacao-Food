@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import search from "../../Images/search.svg";
 import { Button, Container, Form } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const Search = ({ onSearch }) => {
   const [showInput, setShowInput] = useState(false);
@@ -15,26 +16,25 @@ const Search = ({ onSearch }) => {
     setInputValue(e.target.value);
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   onSearch(inputValue);
-  //   console.log("hola");
-  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSearch(inputValue);
+    console.log("hola");
+  };
 
   return (
     <Container>
       <div className="search__container">
         <Button onClick={handleOnClick} className="search__button">
-          <img
-            title="Búsqueda"
+          <FontAwesomeIcon
+            icon={faMagnifyingGlass}
             className="navbar__search"
-            src={search}
-            alt="search"
+            title="Búsqueda"
           />
         </Button>
         {showInput && (
           <Form.Control
-            //onSubmit={handleSubmit}
+            onSubmit={handleSubmit}
             className="search__input"
             type="text"
             value={inputValue}

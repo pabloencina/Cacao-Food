@@ -1,12 +1,12 @@
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import shoppingCart from "../../Images/shopping-cart.svg";
 import Search from "./Search";
 import { useState } from "react";
 import dataMenu from "../../Data/dataMenu";
 import "../../Css/active.css";
 import { Link, NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 function NavbarComponent() {
   const [searchResults, setSearchResults] = useState([]);
@@ -73,7 +73,7 @@ function NavbarComponent() {
           </NavLink>
         </Nav>
         <Nav>
-          <Container className="navbar__container_icons_buttons">
+          <div className="navbar__container_icons_buttons">
             <Link href="">
               <div
                 style={{
@@ -87,9 +87,9 @@ function NavbarComponent() {
                 ))}
                 <Link>
                   <div className="navbar__shoppingCart">
-                    <img
-                      src={shoppingCart}
-                      alt="shoppingCart"
+                    <FontAwesomeIcon
+                      icon={faCartShopping}
+                      className="navbar__shoppingCart"
                       title="Carrito de Compras"
                     />
                   </div>
@@ -104,7 +104,7 @@ function NavbarComponent() {
             >
               Mi Perfil
             </Link>
-          </Container>
+          </div>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

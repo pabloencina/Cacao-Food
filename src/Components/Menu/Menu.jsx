@@ -26,11 +26,13 @@ function Menu() {
       <MenuSections />
       <div className="container">
         <Row>
-          {dataMenu.map((menu) => (
-            <Col key={menu.id} md={4}>
-              <CardMenu key={menu.id} menu={menu} />
-            </Col>
-          ))}
+          {dataMenu.map((menu) => {
+            return menu.classification === "platos" ? (
+              <Col key={menu.id} md={4}>
+                <CardMenu key={menu.id} menu={menu} />
+              </Col>
+            ) : null;
+          })}
         </Row>
       </div>
     </div>

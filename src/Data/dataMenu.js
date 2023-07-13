@@ -1,5 +1,13 @@
 import chickenImage from "../Images/imageChicken.jpg";
 import polloAlaPlancha from "../Images/Menu-images/CacaoFood/image1.jpg";
+import pescadoPlancha from "../Images/Menu-images/CacaoFood/image2.jpg";
+import polloNaranja from "../Images/Menu-images/CacaoFood/image4.jpg";
+import polloChampiñones from "../Images/Menu-images/CacaoFood/image5.jpg";
+import resAsada from "../Images/Menu-images/CacaoFood/image6.jpg";
+import purePapas from "../Images/Menu-images/CacaoFood/image7.jpg";
+import ensaladaClásica from "../Images/Menu-images/CacaoFood/image8.jpg";
+import ensaladaCesar from "../Images/Menu-images/CacaoFood/image9.jpg";
+import ensaladaGriega from "../Images/Menu-images/CacaoFood/image10.jpg";
 
 const dataMenu = [
   {
@@ -8,7 +16,7 @@ const dataMenu = [
     description:
       "Este plato saludable resalta los sabores naturales de las verduras, manteniendo su textura crujiente.Puede servirse como guarnición o como plato principal.",
     price: 3000,
-    image: { polloAlaPlancha },
+    image: polloAlaPlancha,
     classification: "ensalada",
   },
   {
@@ -17,7 +25,7 @@ const dataMenu = [
     description:
       "La ensalada César es una clásica mezcla de lechuga romana, crotons, queso parmesano y aderezo César. Es famosa por su sabor distintivo y texturas variadas.",
     price: 3000,
-    image: { chickenImage },
+    image: ensaladaCesar,
     classification: "ensalada",
   },
   {
@@ -26,7 +34,7 @@ const dataMenu = [
     description:
       "Es perfecto para complementar platos de carnes, aves o pescado, y su sabor sencillo y delicioso lo convierte en un favorito en muchas mesas.",
     price: 3000,
-    image: { chickenImage },
+    image: purePapas,
     classification: "ensalada",
   },
   {
@@ -35,7 +43,7 @@ const dataMenu = [
     description:
       "La ensalada griega es una fresca y sabrosa combinación de ingredientes mediterráneos. Destacada por su equilibrio de sabores y colores.",
     price: 3000,
-    image: { chickenImage },
+    image: ensaladaGriega,
     classification: "ensalada",
   },
   {
@@ -44,18 +52,18 @@ const dataMenu = [
     description:
       "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
     price: 3000,
-    image: { chickenImage },
+    image: ensaladaClásica,
     classification: "ensalada",
   },
-  {
-    id: 6,
-    name: "Ensalada de la Casa",
-    description:
-      "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
-    price: 3000,
-    image: { chickenImage },
-    classification: "ensalada",
-  },
+  // {
+  //   id: 6,
+  //   name: "Ensalada de la Casa",
+  //   description:
+  //     "El pollo a la plancha con ensalada mixta es una deliciosa opción de comida saludable y nutritiva. Este plato combina la jugosidad y el sabor del pollo a la plancha con una refrescante ensalada de vegetales variados.",
+  //   price: 3000,
+  //   image: { chickenImage },
+  //   classification: "ensalada",
+  // },
   {
     id: 7,
     name: "Torta de Zanahorias",
@@ -208,6 +216,70 @@ const dataMenu = [
     price: 3000,
     image: { chickenImage },
     classification: "bebidas",
+  },
+
+  {
+    id: 24,
+    name: "Pollo a la Plancha",
+    description:
+      "Nuestro pollo a la plancha es una opción saludable y deliciosa. Jugoso, tierno y cocinado a la perfección , se sirve con una exquisita combinación de hierbas frescas y especias.",
+    price: 3000,
+    image: polloAlaPlancha,
+    classification: "platos",
+  },
+  {
+    id: 25,
+    name: "Pescado a la Plancha",
+    description:
+      "Nuestro pescado a la plancha es una elección fresca y nutritiva. Cocinado a la perfección, cada bocado es jugoso y lleno de sabor.",
+    price: 3000,
+    image: pescadoPlancha,
+    classification: "platos",
+  },
+  {
+    id: 26,
+    name: "Pollo a la Naranja",
+    description:
+      "Nuestro pollo a la naranja es una explosión de sabores frescos y cítricos. El pollo jugosos se mezcla perfectamente con la dulzura y acidez de la naranja, creando un plato saludable y delicioso.",
+    price: 3000,
+    image: polloNaranja,
+    classification: "platos",
+  },
+  {
+    id: 27,
+    name: "Res Asada",
+    description:
+      "Disfruta de cada bocado de nuestra res asada, que te transportará a la perfección de los sabores. Es una carne tierna, jugosa y llena de sabor, perfecta para una comida saludable y satisfactoria.",
+    price: 3000,
+    image: resAsada,
+    classification: "platos",
+  },
+  {
+    id: 28,
+    name: "Pollo en Salsa de champiñones",
+    description:
+      "El pollo en salsa de champiñones es una combinación irresistible de tierna carne de pollo y una deliciosa salsa cremosa. Los champiñones frescos añaden un toque natural y sabroso.",
+    price: 3000,
+    image: polloChampiñones,
+    classification: "platos",
+  },
+  {
+    id: 29,
+    name: "Ternera Asada",
+    description:
+      "Un plato saludable y lleno de sabor que te hará disfrutar de una experiencia gastronómica única. Su carne jugosa y tierna se complementa con una deliciosa capa dorada y crujiente.",
+    price: 3000,
+    image: { chickenImage },
+    classification: "platos",
+  },
+  {
+    id: 30,
+    name: "Res con Salsa de tomate",
+    description:
+      "El jugoso y tierno filete de res se complementa perfectamente con la salsa de tomate llena de sabores naturales y frescos. Disfruta de este plato reconfortante y saludable.",
+    price: 3000,
+    image: { chickenImage },
+    classification: "platos",
   },
 ];
 

@@ -7,6 +7,7 @@ import "../../Css/active.css";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import logoCacaoFood from "../../Images/Logo/Logo/Group 2logo2Cacao.png";
 
 function NavbarComponent() {
   const [searchResults, setSearchResults] = useState([]);
@@ -26,7 +27,7 @@ function NavbarComponent() {
         activeClassName="active"
         className="navbar__container_logo"
       >
-        Cacao Food
+        <img src={logoCacaoFood} alt="Logo CacaoFood" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

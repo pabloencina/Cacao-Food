@@ -1,4 +1,5 @@
 import chickenImage from "../Images/imageChicken.jpg";
+import polloAlaPlancha from "../Images/Menu-images/CacaoFood/image1.jpg";
 
 const dataMenu = [
   {
@@ -7,14 +8,14 @@ const dataMenu = [
     description:
       "Este plato saludable resalta los sabores naturales de las verduras, manteniendo su textura crujiente.Puede servirse como guarnición o como plato principal.",
     price: 3000,
-    image: { chickenImage },
+    image: { polloAlaPlancha },
     classification: "ensalada",
   },
   {
     id: 2,
     name: "Ensalada César",
     description:
-      "La ensalada César es una clásica mezcla de lechuga romana, crutones, queso parmesano y aderezo César. Es famosa por su sabor distintivo y texturas variadas.",
+      "La ensalada César es una clásica mezcla de lechuga romana, crotons, queso parmesano y aderezo César. Es famosa por su sabor distintivo y texturas variadas.",
     price: 3000,
     image: { chickenImage },
     classification: "ensalada",

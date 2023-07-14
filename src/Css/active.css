@@ -1,4 +1,7 @@
 .active{
-    color: green !important;
+    color: #316B3E !important;
   font-weight: bold;
+  text-decoration:underline;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+

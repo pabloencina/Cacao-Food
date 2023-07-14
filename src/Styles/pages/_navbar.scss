@@ -1,19 +1,41 @@
 .navbar{
-  
+        background-color: $colorFondoSecundario;
+        width: 90rem;
+        height: 5.30rem;
+ 
+  &__container_button{
+    height: 2rem;
+    display: flex;
+  }
     &__search{
-        width: 1.5rem;
+        margin-left: 300px;
+        width: 1.75rem;
+        height: 1.75rem;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            color:$colorTerciario
+        }
     };
     &__container_icons_buttons{
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: space-between;
+        width: 100%
     };
     &__shoppingCart{
-        width: 1.5rem;
+        width: 1.75rem;
+        height: 1.75rem;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+        color: black;
+        &:hover{
+            color:$colorTerciario
+        }
     }
     &__container_mi_perfil{
         display: flex;
@@ -22,10 +44,36 @@
     };
     &__link{
         margin: 0.5rem;
-    background-color: inherit;
-    color: black;
-    display: flex;
-    align-items: center;
+        color: black;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        white-space: nowrap;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        &:hover{
+            color:$colorTerciario
+        }
+    }
+    &__mi_perfil{
+        margin: 0.5rem;
+        background-color: $colorTerciario;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8.37rem;
+        height: 3rem;
+        border: 3px solid $colorPrimario;
+        border-radius: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        &:hover{
+            background-color: white;
+            color:$colorPrimario
+        }
     }
 }
 
@@ -33,14 +81,20 @@
     &__container{
         display: flex;
         justify-content: end;
-        width: 25rem;
+        width: 24rem;
+        
     };
     &__button{
         background-color: inherit;
         border: none;
+        &:hover{
+            color:$colorTerciario;
+            background-color: inherit;
+        }
     }
     &__input{
-                width: 18 rem;
+                width: 10rem;
+                text-decoration: none;
             }
 }
 
@@ -52,8 +106,9 @@
 }
 
 @media screen  and (max-width:412px){
+   
     .navbar{
-        
+        width: 25rem;
         &__search{
             width: 1.5rem;
         };
@@ -67,7 +122,28 @@
         &__container_mi_perfil{
             width: 6rem;
         }
-
+        &__link{
+            margin: 0.5rem;
+            color: black;
+            display: flex;
+            align-items: center;
+            max-width: 100%;
+            white-space: nowrap;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        &__mi_perfil{
+            background-color: $colorTerciario;
+            color: black;
+            width: 6rem;
+            height: 2rem;
+            border: 2px solid $colorPrimario;
+            border-radius: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+        }
         .search{
             &__container{
                 width: 100%;
@@ -91,9 +167,9 @@
         img{
             position: absolute;
             width: 1.2rem;
-            margin-left: 9.5rem;
+            margin-left: 8.5rem;
             display: block;
-
+            background-color: red;
         }
 
         img:first-child{

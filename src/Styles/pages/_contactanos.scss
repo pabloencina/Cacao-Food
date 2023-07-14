@@ -1,19 +1,37 @@
 .contactanos{
     &__title_box{
-        height: 6rem;
+        height: 10rem;
         display: flex;
-        align-items: center;
+        align-items: end;
+        //background-color: aqua;
+        margin: 0%
     };
+    &__title{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: $colorPrimario;
+        font-size: 3.25rem;
+        line-height: 4rem;
+    }
     &__text_box{
         height:  6rem;
+        width: 60%;
         display: flex;
         align-items: center;
     };
+    &__text{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.56rem;
+        line-height: 2rem;
+    }
     &__icons_box{
         height:  6rem;
+        width: 60%;
         display: flex;
         align-items: center;
         justify-content: center;
+        //background-color: aqua
     };
     &__icons{
         width: 3rem;
@@ -25,40 +43,63 @@
         justify-content: start;
         height:  6rem;
     };
+    &__text_input{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.875rem;
+        line-height: 2,285625rem;
+    }
+    &__asterisco{
+        color: #E20605;
+    }
     &__text_area_box{
-        width: 28rem;
-        height: 12rem;
+        width: 41.43rem;
+        height: 12.81rem;
         border-radius: 1rem;
-        border: 1px solid;
+        border: 3px solid #39874A;
     };
     &__input_box{
-        width: 28rem;
-        height: 3rem;
+        width: 41.43rem;
+        height: 3.75rem;
         border-radius: 1rem;
-        border: 1px solid;
+        border: 3px solid #39874A;
     };
-    &__box_button_enviar{
-        //height: 5rem;
+    &__box_button_enviar{   
         display: flex;
-        //justify-content: center;
-        background-color: inherit;
+        height: 7.5rem;
+        align-items: center;
     };
     &__button_enviar{
-        background-color: inherit;
+        background-color: $colorTerciario;
         color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 13.9rem;
+        height: 4rem;
+        border: 3px solid $colorPrimario;
+        border-radius: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+        &:hover{
+            background-color: white;
+            color:$colorPrimario;
+            border: 3px solid $colorPrimario;
+        }
     };
-    // &__google_map_container{
-    //     //display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     height: 35rem;
-    //     width: 80%;
-    //     background-color: red;
-    // };
-    // &__google_map{
-    //     width: 80%;
-    //     //height: 25rem;
-    // }
+    &__google_map_container{
+        //display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35rem;
+        width: 75.87rem
+    };
+    &__google_map{
+        height: 27.68rem;
+        width: 75.87rem;
+    }
 }
 
 @media screen  and (max-width:25.75rem){

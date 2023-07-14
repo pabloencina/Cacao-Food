@@ -8,7 +8,7 @@ import GoogleMap from "../Google-map/GoogleMap";
 const Contactanos = () => {
   return (
     <div>
-      <div className="container">
+      <div>
         <div className="row">
           <div className="col-md-12">
             <div className="contactanos__title_box">
@@ -109,7 +109,7 @@ const Contactanos = () => {
         </div>
       </div>
       <div>
-        <div className="container">
+        <div>
           <div className="row">
             <div className="col-md-12">
               <div className="contactanos__title_box">

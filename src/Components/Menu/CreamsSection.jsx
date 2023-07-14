@@ -1,25 +1,25 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import dataMenu from "../../Data/dataMenu.js";
 import CardMenu from "./CardMenu";
 import MenuSections from "./MenuSections";
 
 const CreamsSection = () => {
   return (
-    <Container>
+    <div>
       <div className="menu__container_title">
-        <h1>Menú</h1>
+        <h1 className="menu__title">Menú</h1>
       </div>
 
       <div className="menu__container_text">
         <div style={{ width: "1400px" }}>
-          <p>
+          <p className="menu__text">
             En CacaoFood nos interesa tu salud, por eso cocinamos nuestros
             platos con productos de calidad, de proveedores locales y
             confiables.
           </p>
           <br></br>
-          <p>¡Nuestro menú te dejará sin palabras!</p>
+          <p className="menu__text">¡Nuestro menú te dejará sin palabras!</p>
         </div>
       </div>
       <MenuSections />
@@ -34,7 +34,7 @@ const CreamsSection = () => {
           })}
         </Row>
       </div>
-    </Container>
+    </div>
   );
 };
 

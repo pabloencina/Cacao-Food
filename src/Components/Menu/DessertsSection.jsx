@@ -12,7 +12,7 @@ const DessertsSection = () => {
       </div>
 
       <div className="menu__container_text">
-        <div style={{ width: "1400px" }}>
+        <div style={{ width: "90rem" }}>
           <p className="menu__text">
             En CacaoFood nos interesa tu salud, por eso cocinamos nuestros
             platos con productos de calidad, de proveedores locales y

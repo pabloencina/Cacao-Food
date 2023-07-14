@@ -1,14 +1,37 @@
-import chickenImage from "../Images/imageChicken.jpg";
-import polloAlaPlancha from "../Images/Menu-images/CacaoFood/image1.jpg";
-import pescadoPlancha from "../Images/Menu-images/CacaoFood/image2.jpg";
-import polloNaranja from "../Images/Menu-images/CacaoFood/image4.jpg";
-import polloChampiñones from "../Images/Menu-images/CacaoFood/image5.jpg";
-import resAsada from "../Images/Menu-images/CacaoFood/image6.jpg";
-import purePapas from "../Images/Menu-images/CacaoFood/image7.jpg";
+import polloAlaPlancha from "../Images/Menu-images/CacaoFood/Platos/image1.jpg";
+import pescadoPlancha from "../Images/Menu-images/CacaoFood/Platos/image2.jpg";
+import polloNaranja from "../Images/Menu-images/CacaoFood/Platos/image4.jpg";
+import polloChampiñones from "../Images/Menu-images/CacaoFood/Platos/image5.jpg";
+import terneraAsada from "../Images/Menu-images/CacaoFood/Platos/terneraAsada.jpg";
+import resSalsaTomate from "../Images/Menu-images/CacaoFood/Platos/resSalsaTomate.jpg";
+import resAsada from "../Images/Menu-images/CacaoFood/Platos/image6.jpg";
+
+import purePapas from "../Images/Menu-images/CacaoFood/Ensaladas/image 8pure.jpg";
+import verdurasSalteadas from "../Images/Menu-images/CacaoFood/Ensaladas/image8.jpg";
 //import purePapas2 from "../Images/Menu-images/CacaoFood/image12.jpg";
-import ensaladaClásica from "../Images/Menu-images/CacaoFood/image8.jpg";
-import ensaladaCesar from "../Images/Menu-images/CacaoFood/image9.jpg";
-import ensaladaGriega from "../Images/Menu-images/CacaoFood/image10.jpg";
+import ensaladaClásica from "../Images/Menu-images/CacaoFood/Ensaladas/image8.jpg";
+import ensaladaCesar from "../Images/Menu-images/CacaoFood/Ensaladas/image9.jpg";
+import ensaladaGriega from "../Images/Menu-images/CacaoFood/Ensaladas/image 8griega.jpg";
+
+import tortaLimón from "../Images/Menu-images/CacaoFood/Postres/image 9postres.jpg";
+import tortaBanana from "../Images/Menu-images/CacaoFood/Postres/image 8postres.jpg";
+import tortaFrutosRojosAlmendras from "../Images/Menu-images/CacaoFood/Postres/image 12postres.jpg";
+import tortaZanahoria from "../Images/Menu-images/CacaoFood/Postres/image 11postres.jpg";
+import tortaNaranjaCoco from "../Images/Menu-images/CacaoFood/Postres/image 10postres.jpg";
+
+import cremaColiflor from "../Images/Menu-images/CacaoFood/Cremas/image 10cremas.jpg";
+import cremaEspinaca from "../Images/Menu-images/CacaoFood/Cremas/image 11cremas.jpg";
+import cremaCalabaza from "../Images/Menu-images/CacaoFood/Cremas/image 12cremas.jpg";
+import cremaBrocoli from "../Images/Menu-images/CacaoFood/Cremas/image 8cremas.jpg";
+import cremaZanahoria from "../Images/Menu-images/CacaoFood/Cremas/image 9cremas.jpg";
+
+import naranjada from "../Images/Menu-images/CacaoFood/Jugos/image 10jugos.jpg";
+import jugoLuloMaracuya from "../Images/Menu-images/CacaoFood/Jugos/image 11jugos.jpg";
+import jugoGuanabana from "../Images/Menu-images/CacaoFood/Jugos/image 16jugos.jpg";
+import jugoFresa from "../Images/Menu-images/CacaoFood/Jugos/image 17jugos.jpg";
+import jugoMora from "../Images/Menu-images/CacaoFood/Jugos/image 18jugos.jpg";
+import jugoMandarina from "../Images/Menu-images/CacaoFood/Jugos/image 8jugos.jpg";
+import limonada from "../Images/Menu-images/CacaoFood/Jugos/image 9jugos.jpg";
 
 const dataMenu = [
   {
@@ -17,7 +40,7 @@ const dataMenu = [
     description:
       "Este plato saludable resalta los sabores naturales de las verduras, manteniendo su textura crujiente.Puede servirse como guarnición o como plato principal.",
     price: 3000,
-    image: polloAlaPlancha,
+    image: verdurasSalteadas,
     classification: "ensalada",
   },
   {
@@ -71,7 +94,7 @@ const dataMenu = [
     description:
       "Nuestra torta de zanahoria es una delicia esponjosa y saludable. Con su mezcla perfecta de zanahorias ralladas, nueces y especias, cada bocado te brinda una explosión de sabores naturales.",
     price: 3000,
-    image: { chickenImage },
+    image: tortaZanahoria,
     classification: "postres",
   },
   {
@@ -80,7 +103,7 @@ const dataMenu = [
     description:
       "Esta torta es una exquisitez saludable. Cada bocado combina la dulzura de los frutos rojos con la textura crujiente de las almendras.",
     price: 3000,
-    image: { chickenImage },
+    image: tortaFrutosRojosAlmendras,
     classification: "postres",
   },
   {
@@ -89,7 +112,7 @@ const dataMenu = [
     description:
       "Su suave textura y sabor naturalmente dulce conquistaran en cada bocado. Disfruta de este postre nutritivo que combina la bondad de las bananas con un toque de esponjosidad.",
     price: 3000,
-    image: { chickenImage },
+    image: tortaBanana,
     classification: "postres",
   },
   {
@@ -98,7 +121,7 @@ const dataMenu = [
     description:
       "Nuestra torta de limón es una explosión refrescante de sabores, donde cada bocado te transporta a un paraíso cítrico y ligero.",
     price: 3000,
-    image: { chickenImage },
+    image: tortaLimón,
     classification: "postres",
   },
   {
@@ -107,7 +130,7 @@ const dataMenu = [
     description:
       "Esta torta te transporta a playas exóticas con su sabor refrescante y textura suave. Disfruta de este postre saludable que te hará sentir como si estuvieras en un paraíso culinario.",
     price: 3000,
-    image: { chickenImage },
+    image: tortaNaranjaCoco,
     classification: "postres",
   },
   {
@@ -116,7 +139,7 @@ const dataMenu = [
     description:
       "Disfruta de esta opción ligera y deliciosa, cuya textura suave y sabor delicado se convierte en una explosión de nutrientes",
     price: 3000,
-    image: { chickenImage },
+    image: cremaZanahoria,
     classification: "cremas",
   },
   {
@@ -125,7 +148,7 @@ const dataMenu = [
     description:
       "Incorpora más vegetales a tu dieta con esta opción cremosa y nutritiva. Es un plato saludable y confortante que te nutrirá y satisfará.",
     price: 3000,
-    image: { chickenImage },
+    image: cremaColiflor,
     classification: "cremas",
   },
   {
@@ -134,7 +157,7 @@ const dataMenu = [
     description:
       "Sumérgete en la deliciosa suavidad de nuestra crema de espinacas. Cada cucharada te envolverá en un sabor verde y confortante, lleno de nutrientes y frescura.",
     price: 3000,
-    image: { chickenImage },
+    image: cremaEspinaca,
     classification: "cremas",
   },
   {
@@ -143,7 +166,7 @@ const dataMenu = [
     description:
       "Nuestra crema de calabaza es una explosión de sabor y confort. Con su textura suave y su sabor reconfortante, esta crema te envolverá en un abrazo cálido y nutritivo.",
     price: 3000,
-    image: { chickenImage },
+    image: cremaCalabaza,
     classification: "cremas",
   },
   {
@@ -152,7 +175,7 @@ const dataMenu = [
     description:
       "Disfruta de esta opción nutritiva y deliciosa que te brinda una dosis de verduras en cada bocado, con la delicadeza de brocoli fresco.",
     price: 3000,
-    image: { chickenImage },
+    image: cremaBrocoli,
     classification: "cremas",
   },
   {
@@ -161,7 +184,7 @@ const dataMenu = [
     description:
       "Refrescante y revitalizante. Disfruta de esta bebida saludable y llena de vitamina C que te hidrata y revitalizará.",
     price: 3000,
-    image: { chickenImage },
+    image: limonada,
     classification: "bebidas",
   },
   {
@@ -170,7 +193,7 @@ const dataMenu = [
     description:
       "El jugo fresco de naranjas recién exprimidas te brinda una sensación naturalmente dulce y refrescante. Disfruta dfe esta bebida llena de vitamina C que te revitalizará en cada sorbo.",
     price: 3000,
-    image: { chickenImage },
+    image: naranjada,
     classification: "bebidas",
   },
   {
@@ -179,7 +202,7 @@ const dataMenu = [
     description:
       "Esta bebida saludable te hidrata y revitaliza, transportándote en cada sorbo a un oasis de dulzura natural y vitamina C.",
     price: 3000,
-    image: { chickenImage },
+    image: jugoMandarina,
     classification: "bebidas",
   },
   {
@@ -188,7 +211,7 @@ const dataMenu = [
     description:
       "Esta bebida saludable te brinda un festín de antioxidantes y vitaminas, con su sabor dulce y refrescante.",
     price: 3000,
-    image: { chickenImage },
+    image: jugoGuanabana,
     classification: "bebidas",
   },
   {
@@ -197,7 +220,7 @@ const dataMenu = [
     description:
       "Esta bebida saludable que te brinda una explosión de sabor y beneficios antioxidantes, donde cada sorbo te deleitará con la intensidad y dulzura de las fresas maduras.",
     price: 3000,
-    image: { chickenImage },
+    image: jugoFresa,
     classification: "bebidas",
   },
   {
@@ -206,7 +229,7 @@ const dataMenu = [
     description:
       "Nuestro jugo de mora es una sinfonia de sabores intensos y antioxidantes. Cada sorbo te sumerge en la dulzura y frescura de las moras silvestres.",
     price: 3000,
-    image: { chickenImage },
+    image: jugoMora,
     classification: "bebidas",
   },
   {
@@ -215,7 +238,7 @@ const dataMenu = [
     description:
       "Este delicioso jugo natural te transporta a un paraíso tropical con un equilibrio perfecto de sabores y tropicales.",
     price: 3000,
-    image: { chickenImage },
+    image: jugoLuloMaracuya,
     classification: "bebidas",
   },
 
@@ -270,7 +293,7 @@ const dataMenu = [
     description:
       "Un plato saludable y lleno de sabor que te hará disfrutar de una experiencia gastronómica única. Su carne jugosa y tierna se complementa con una deliciosa capa dorada y crujiente.",
     price: 3000,
-    image: { chickenImage },
+    image: terneraAsada,
     classification: "platos",
   },
   {
@@ -279,7 +302,7 @@ const dataMenu = [
     description:
       "El jugoso y tierno filete de res se complementa perfectamente con la salsa de tomate llena de sabores naturales y frescos. Disfruta de este plato reconfortante y saludable.",
     price: 3000,
-    image: { chickenImage },
+    image: resSalsaTomate,
     classification: "platos",
   },
 ];

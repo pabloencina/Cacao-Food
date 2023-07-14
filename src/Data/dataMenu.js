@@ -5,6 +5,7 @@ import polloNaranja from "../Images/Menu-images/CacaoFood/image4.jpg";
 import polloChampiñones from "../Images/Menu-images/CacaoFood/image5.jpg";
 import resAsada from "../Images/Menu-images/CacaoFood/image6.jpg";
 import purePapas from "../Images/Menu-images/CacaoFood/image7.jpg";
+//import purePapas2 from "../Images/Menu-images/CacaoFood/image12.jpg";
 import ensaladaClásica from "../Images/Menu-images/CacaoFood/image8.jpg";
 import ensaladaCesar from "../Images/Menu-images/CacaoFood/image9.jpg";
 import ensaladaGriega from "../Images/Menu-images/CacaoFood/image10.jpg";

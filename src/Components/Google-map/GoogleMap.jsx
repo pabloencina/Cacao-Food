@@ -3,11 +3,11 @@ import { Map, GoogleApiWrapper } from "google-maps-react";
 
 const GoogleMap = (props) => {
   const mapStyles = {
-    width: "70%",
-    height: "30rem",
+    height: "27.68rem",
+    width: "75.87rem",
     border: "1px solid #ccc",
     borderRadius: "4px",
-    marginTop: "2rem",
+    //marginTop: "2rem",
   };
   return (
     <Map

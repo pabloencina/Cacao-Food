@@ -70,7 +70,7 @@ function NavbarComponent() {
             href="contactanos"
             activeClassName="active"
           >
-            Contáctenos
+            Contáctanos
           </NavLink>
         </Nav>
         <Nav>

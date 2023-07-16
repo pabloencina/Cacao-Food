@@ -1,11 +1,11 @@
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import CardMenu from "./CardMenu";
 import dataMenu from "../../Data/dataMenu";
 import MenuSections from "./MenuSections";
 
 function Menu() {
   return (
-    <div>
+    <Container fluid>
       <div className="menu__container_title">
         <h1 className="menu__title">Menú</h1>
       </div>
@@ -33,7 +33,7 @@ function Menu() {
           })}
         </Row>
       </div>
-    </div>
+    </Container>
   );
 }
 

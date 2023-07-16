@@ -1,8 +1,8 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Search from "./Search";
-import { useState } from "react";
-import dataMenu from "../../Data/dataMenu";
+//import { useState } from "react";
+//import dataMenu from "../../Data/dataMenu";
 import "../../Css/active.css";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,16 +10,16 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import logoCacaoFood from "../../Images/Logo/Logo/Group 2logo2Cacao.png";
 
 function NavbarComponent() {
-  const [searchResults, setSearchResults] = useState([]);
+  //const [searchResults, setSearchResults] = useState([]);
 
-  const handleSearch = (query) => {
-    console.log(query);
-    dataMenu.filter((menu) =>
-      menu.name.toLowerCase().includes(query.toLowerCase())
-    );
+  // const handleSearch = (query) => {
+  //   console.log(query);
+  //   dataMenu.filter((menu) =>
+  //     menu.name.toLowerCase().includes(query.toLowerCase())
+  //   );
 
-    setSearchResults(dataMenu);
-  };
+  //   setSearchResults(dataMenu);
+  // };
   return (
     <Navbar collapseOnSelect expand="lg">
       <Navbar.Brand
@@ -82,10 +82,10 @@ function NavbarComponent() {
                   justifyContent: "center",
                 }}
               >
-                <Search onSearch={handleSearch} />
-                {searchResults.map((menu) => (
+                <Search />
+                {/* {searchResults.map((menu) => (
                   <div key={menu.id}>{menu.name}</div>
-                ))}
+                ))} */}
                 <Link>
                   <div className="navbar__shoppingCart">
                     <FontAwesomeIcon

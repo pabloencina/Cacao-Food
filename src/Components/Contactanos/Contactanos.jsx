@@ -71,6 +71,8 @@ const Contactanos = () => {
                   <input
                     className="contactanos__input_box"
                     placeholder="   Ingresa tu nombre: Ej Maria Perez"
+                    required
+                    type="text"
                   />
                 </div>
                 <div className="contactanos__text_input_box">
@@ -82,7 +84,8 @@ const Contactanos = () => {
                 <div>
                   <input
                     className="contactanos__input_box"
-                    placeholder="   Ingresa tu correo electrónico: maria_perez@gmail.com"
+                    placeholder="  Ingresa tu correo electrónico: maria_perez@gmail.com"
+                    required
                   />
                 </div>
                 <div>
@@ -94,7 +97,9 @@ const Contactanos = () => {
                   <div>
                     <textarea
                       className="contactanos__text_area_box"
-                      placeholder="  Ingresa tu mensaje aquí"
+                      placeholder="   Ingresa tu reseña"
+                      required
+                      type="text"
                     />
                   </div>
                 </div>

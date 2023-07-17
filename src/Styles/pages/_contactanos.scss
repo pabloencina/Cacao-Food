@@ -57,12 +57,20 @@
         height: 12.81rem;
         border-radius: 1rem;
         border: 3px solid #39874A;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px
     };
     &__input_box{
         width: 41.43rem;
         height: 3.75rem;
         border-radius: 1rem;
         border: 3px solid #39874A;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px
     };
     &__box_button_enviar{   
         display: flex;

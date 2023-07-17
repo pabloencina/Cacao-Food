@@ -4,6 +4,9 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import image_home from "../../Images/image_home.jpg";
+import dataMenu from "../../Data/dataMenu";
+import CardMenu from "../Menu/CardMenu";
+import image_section_home from "../../Images/image_seccion_inicio.jpg";
 
 function Home() {
   return (
@@ -44,38 +47,39 @@ function Home() {
       </Row>
 
       <Row className="justify-content-center home">
-        <h2 className="home__titulo">Platos destacados</h2>
-        <Col xs={12} md={4} className="home__plato">
+        <div className="home__container_title">
+          <h1 className="home__title">Platos destacados</h1>
+        </div>
+
+        <div className="container">
           <Row>
-            <Image src="/multimedia/imagen_prueba.jpg" rounded fluid />
+            {dataMenu.map((menu) => {
+              return menu.destacados === true ? (
+                <Col key={menu.id} md={4}>
+                  <CardMenu key={menu.id} menu={menu} />
+                </Col>
+              ) : null;
+            })}
           </Row>
-          <Row>
-            <p>Plato: Texto descriptivo</p>
-          </Row>
-        </Col>
-        <Col xs={12} md={4} className="home__plato">
-          <Row>
-            <Image src="/multimedia/imagen_prueba.jpg" rounded fluid />
-          </Row>
-          <Row>
-            <p>Plato: Texto descriptivo</p>
-          </Row>
-        </Col>
-        <Col xs={12} md={4} className="home__plato">
-          <Row>
-            <Image src="/multimedia/imagen_prueba.jpg" rounded fluid />
-          </Row>
-          <Row>
-            <p>Plato: Texto descriptivo</p>
-          </Row>
-        </Col>
+        </div>
       </Row>
       <Row className="justify-content-center home">
-        <h2 className="home__nosotros--titulo">Nosotros</h2>
-        <p className="home__nosotros--texto">
-          Conocé sobre nosotros, nuestra historia y proyectos futuros
-        </p>
-        <Image src="/multimedia/imagen_prueba.jpg" rounded fluid />
+        <div className="home__container_title">
+          <h1 className="home__title">Proyectos a futuro</h1>
+        </div>
+        <div className="home__container_text_proyecto">
+          <p className="home__nosotros--texto">
+            Conoce sobre nosotros, nuestra historia y proyectos futuro.
+          </p>
+        </div>
+        <div className="home__container_image">
+          <Image
+            className="home__image"
+            src={image_section_home}
+            rounded
+            fluid
+          />
+        </div>
       </Row>
     </Container>
   );

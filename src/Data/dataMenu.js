@@ -42,6 +42,7 @@ const dataMenu = [
     price: 3000,
     image: verdurasSalteadas,
     classification: "ensalada",
+    destacados: false,
   },
   {
     id: 2,
@@ -51,6 +52,7 @@ const dataMenu = [
     price: 3000,
     image: ensaladaCesar,
     classification: "ensalada",
+    destacados: false,
   },
   {
     id: 3,
@@ -60,6 +62,7 @@ const dataMenu = [
     price: 3000,
     image: purePapas,
     classification: "ensalada",
+    destacados: false,
   },
   {
     id: 4,
@@ -69,6 +72,7 @@ const dataMenu = [
     price: 3000,
     image: ensaladaGriega,
     classification: "ensalada",
+    destacados: false,
   },
   {
     id: 5,
@@ -78,6 +82,7 @@ const dataMenu = [
     price: 3000,
     image: ensaladaClásica,
     classification: "ensalada",
+    destacados: false,
   },
   // {
   //   id: 6,
@@ -96,6 +101,7 @@ const dataMenu = [
     price: 3000,
     image: tortaZanahoria,
     classification: "postres",
+    destacados: false,
   },
   {
     id: 8,
@@ -105,6 +111,7 @@ const dataMenu = [
     price: 3000,
     image: tortaFrutosRojosAlmendras,
     classification: "postres",
+    destacados: true,
   },
   {
     id: 9,
@@ -114,6 +121,7 @@ const dataMenu = [
     price: 3000,
     image: tortaBanana,
     classification: "postres",
+    destacados: false,
   },
   {
     id: 10,
@@ -123,6 +131,7 @@ const dataMenu = [
     price: 3000,
     image: tortaLimón,
     classification: "postres",
+    destacados: false,
   },
   {
     id: 11,
@@ -132,6 +141,7 @@ const dataMenu = [
     price: 3000,
     image: tortaNaranjaCoco,
     classification: "postres",
+    destacados: false,
   },
   {
     id: 12,
@@ -141,6 +151,7 @@ const dataMenu = [
     price: 3000,
     image: cremaZanahoria,
     classification: "cremas",
+    destacados: false,
   },
   {
     id: 13,
@@ -150,6 +161,7 @@ const dataMenu = [
     price: 3000,
     image: cremaColiflor,
     classification: "cremas",
+    destacados: false,
   },
   {
     id: 14,
@@ -159,6 +171,7 @@ const dataMenu = [
     price: 3000,
     image: cremaEspinaca,
     classification: "cremas",
+    destacados: false,
   },
   {
     id: 15,
@@ -168,6 +181,7 @@ const dataMenu = [
     price: 3000,
     image: cremaCalabaza,
     classification: "cremas",
+    destacados: false,
   },
   {
     id: 16,
@@ -177,6 +191,7 @@ const dataMenu = [
     price: 3000,
     image: cremaBrocoli,
     classification: "cremas",
+    destacados: true,
   },
   {
     id: 17,
@@ -186,6 +201,7 @@ const dataMenu = [
     price: 3000,
     image: limonada,
     classification: "bebidas",
+    destacados: false,
   },
   {
     id: 18,
@@ -195,6 +211,7 @@ const dataMenu = [
     price: 3000,
     image: naranjada,
     classification: "bebidas",
+    destacados: false,
   },
   {
     id: 19,
@@ -204,6 +221,7 @@ const dataMenu = [
     price: 3000,
     image: jugoMandarina,
     classification: "bebidas",
+    destacados: false,
   },
   {
     id: 20,
@@ -213,6 +231,7 @@ const dataMenu = [
     price: 3000,
     image: jugoGuanabana,
     classification: "bebidas",
+    destacados: false,
   },
   {
     id: 21,
@@ -222,6 +241,7 @@ const dataMenu = [
     price: 3000,
     image: jugoFresa,
     classification: "bebidas",
+    destacados: false,
   },
   {
     id: 22,
@@ -231,6 +251,7 @@ const dataMenu = [
     price: 3000,
     image: jugoMora,
     classification: "bebidas",
+    destacados: false,
   },
   {
     id: 23,
@@ -240,6 +261,7 @@ const dataMenu = [
     price: 3000,
     image: jugoLuloMaracuya,
     classification: "bebidas",
+    destacados: false,
   },
 
   {
@@ -250,6 +272,7 @@ const dataMenu = [
     price: 3000,
     image: polloAlaPlancha,
     classification: "platos",
+    destacados: false,
   },
   {
     id: 25,
@@ -259,6 +282,7 @@ const dataMenu = [
     price: 3000,
     image: pescadoPlancha,
     classification: "platos",
+    destacados: false,
   },
   {
     id: 26,
@@ -268,6 +292,7 @@ const dataMenu = [
     price: 3000,
     image: polloNaranja,
     classification: "platos",
+    destacados: false,
   },
   {
     id: 27,
@@ -277,6 +302,7 @@ const dataMenu = [
     price: 3000,
     image: resAsada,
     classification: "platos",
+    destacados: false,
   },
   {
     id: 28,
@@ -286,6 +312,7 @@ const dataMenu = [
     price: 3000,
     image: polloChampiñones,
     classification: "platos",
+    destacados: false,
   },
   {
     id: 29,
@@ -295,6 +322,7 @@ const dataMenu = [
     price: 3000,
     image: terneraAsada,
     classification: "platos",
+    destacados: false,
   },
   {
     id: 30,
@@ -304,6 +332,7 @@ const dataMenu = [
     price: 3000,
     image: resSalsaTomate,
     classification: "platos",
+    destacados: true,
   },
 ];
 

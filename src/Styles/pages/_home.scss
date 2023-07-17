@@ -52,13 +52,14 @@
         
     }
     &__container_title{
-        height: 150px;
+        height: 80px;
     }
     &__title{
         color: $colorPrimario;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 3.25rem;
+        font-size: 2.62rem;
+        line-height: 51.2px
     };
 
     &__text{
@@ -70,7 +71,10 @@
         align-items: center;
         justify-content: center;  
     }
-    
+    &__container_text{
+        height: 180px;
+        margin-top: 50px;
+    }
 
     &__plato {
         margin: 1rem 0;
@@ -84,6 +88,23 @@
     
         &--texto { 
             margin-bottom: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 24.38px;
         }
+    }
+    &__container_image{
+        display: flex;
+        justify-content: center;
+        width: 90rem;
+        height: 40rem ;
+    }
+    &__image{
+        width: 72.12rem;
+        height:35.68rem ;
+    }
+    &__container_text_proyecto{
+        height: 100px;
     }
 }

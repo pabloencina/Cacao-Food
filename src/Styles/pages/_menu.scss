@@ -76,8 +76,8 @@
 .card_menu{
     &__container{
         margin-bottom:8.5rem ;
-        width: 20rem;
-        height:31rem ;
+        width: 23rem;
+        height:34.43rem ;
         border: none;
     };
     &__image{
@@ -128,10 +128,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 8.37rem;
-        height: 3rem;
+        width: 9.5rem;
+        height: 4rem;
         border: 3px solid $colorPrimario;
         border-radius: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1.56rem;
+        line-height: 1.9rem;
         &:hover{
             background-color: white;
             color:$colorPrimario;

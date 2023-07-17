@@ -1,25 +1,16 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Search from "./Search";
-import { useState } from "react";
-import dataMenu from "../../Data/dataMenu";
+//import { useState } from "react";
+//import dataMenu from "../../Data/dataMenu";
 import "../../Css/active.css";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import logoCacaoFood from "../../Images/Logo/Logo/Group 2logo2Cacao.png";
+import { Container } from "react-bootstrap";
 
 function NavbarComponent() {
-  const [searchResults, setSearchResults] = useState([]);
-
-  const handleSearch = (query) => {
-    console.log(query);
-    dataMenu.filter((menu) =>
-      menu.name.toLowerCase().includes(query.toLowerCase())
-    );
-
-    setSearchResults(dataMenu);
-  };
   return (
     <Navbar collapseOnSelect expand="lg">
       <Navbar.Brand
@@ -73,40 +64,31 @@ function NavbarComponent() {
             Contáctanos
           </NavLink>
         </Nav>
-        <Nav>
-          <div className="navbar__container_icons_buttons">
-            <Link href="">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <Search onSearch={handleSearch} />
-                {searchResults.map((menu) => (
-                  <div key={menu.id}>{menu.name}</div>
-                ))}
-                <Link>
-                  <div className="navbar__shoppingCart">
-                    <FontAwesomeIcon
-                      icon={faCartShopping}
-                      className="navbar__shoppingCart"
-                      title="Carrito de Compras"
-                    />
-                  </div>
-                </Link>
+
+        <Container className="navbar__container_icons_buttons">
+          <div
+            style={{
+              display: "flex",
+              marginLeft: "40px",
+            }}
+          >
+            <Search />
+
+            <Link>
+              <div className="navbar__shoppingCart">
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  className="navbar__shoppingCart"
+                  title="Carrito de Compras"
+                />
               </div>
             </Link>
-
-            <Link
-              className="navbar__mi_perfil"
-              to={"/mi-perfil"}
-              href="/mi-perfil"
-            >
-              Mi Perfil
-            </Link>
           </div>
-        </Nav>
+
+          <Link className="navbar__mi_perfil" to={"/"} href="/">
+            Mi Perfil
+          </Link>
+        </Container>
       </Navbar.Collapse>
     </Navbar>
   );

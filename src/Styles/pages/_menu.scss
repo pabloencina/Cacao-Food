@@ -40,8 +40,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 4rem;
-        width: 39.25rem;
+        height: 4rem; //64px
+        width: 39.25rem; //
         background-color: $colorFondoSecundario;
         border-radius: 2rem;
     
@@ -69,7 +69,28 @@
     &:hover{
         color: $colorPrimario;
     }
+    
    }
+   &__link_menu_click{
+    //margin: 1rem;
+    //width: 7,0625rem;
+    height: 4rem;
+    background-color: $colorTerciario;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+&__link_menu_click_platos{
+    //margin: 1rem;
+    //width: 14,0625rem;
+    height: 4rem;
+    background-color: $colorTerciario;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
    
 }
 

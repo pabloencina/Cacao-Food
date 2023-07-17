@@ -2,13 +2,18 @@
         background-color: $colorFondoSecundario;
         width: 90rem;
         height: 5.30rem;
- 
-  &__container_button{
-    height: 2rem;
-    display: flex;
+    &__container_logo{
+        margin-left: 20px;
+    }
+    &__container_button{
+    //height: 2rem;
+   display: flex;
+   justify-content: space-between;
+   margin-left: 6rem; 
+    width: 60%;
   }
     &__search{
-        margin-left: 300px;
+        //margin-left: 300px;
         width: 1.75rem;
         height: 1.75rem;
         color: black;
@@ -22,12 +27,14 @@
     &__container_icons_buttons{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 100%
+       justify-content: space-between;
+        width: 30%;
+        //background-color: aqua
     };
     &__shoppingCart{
         width: 1.75rem;
         height: 1.75rem;
+        margin-left: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -78,24 +85,16 @@
 }
 
 .search{
-    &__container{
-        display: flex;
-        justify-content: end;
-        width: 24rem;
-        
-    };
+    
     &__button{
         background-color: inherit;
+        //width: 150px;
         border: none;
         &:hover{
             color:$colorTerciario;
             background-color: inherit;
         }
     }
-    &__input{
-                width: 10rem;
-                text-decoration: none;
-            }
 }
 
 .menuBurger{

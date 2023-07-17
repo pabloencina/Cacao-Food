@@ -1,25 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../Css/active.css";
 import { Link } from "react-router-dom";
 
 const MenuSections = () => {
+  const [buttonColor, setButtonColor] = useState("red");
+
+  const handleClick = () => {
+    setButtonColor("blue");
+  };
   return (
     <div className="menu_section__container">
       <div className="menu_section__container_link_menu">
         <div className="menu_section__button">
           <Link
             to={"/menu"}
-            //activeClassName="active_section"
-            className="menu_section__link_menu"
+            href="/menu"
+            className={`menu_section__link_menu ${buttonColor}`}
+            activeClassName="active"
+            onClick={handleClick}
           >
             Platos
           </Link>
         </div>
         <div className="menu_section__button">
           <Link
-            //activeClassName="active_section"
             to={"/ensaladas"}
             className="menu_section__link_menu"
+            activeClassName="active"
           >
             Ensaladas
           </Link>
@@ -27,27 +34,19 @@ const MenuSections = () => {
         <div className="menu_section__button">
           <Link
             to={"/postres"}
-            //activeClassName="menu_section__active"
             className="menu_section__link_menu"
+            activeClassName="active"
           >
             Postres
           </Link>
         </div>
         <div className="menu_section__button">
-          <Link
-            //activeClassName="menu_section__active"
-            to={"/cremas"}
-            className="menu_section__link_menu"
-          >
+          <Link to={"/cremas"} className="menu_section__link_menu">
             Cremas
           </Link>
         </div>
         <div className="menu_section__button">
-          <Link
-            //activeClassName="active_section"
-            to={"/bebidas"}
-            className="menu_section__link_menu"
-          >
+          <Link to={"/bebidas"} className="menu_section__link_menu">
             Bebidas
           </Link>
         </div>

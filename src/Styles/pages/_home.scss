@@ -1,24 +1,80 @@
 .home {
-    margin: 2rem 0;
-    
-    &__presentacion {
-        text-align: left;
-        margin: auto 0;
+    &__container_page_home{
+        width:  90rem;
         
-        &--button {
-            background-color: $colorFondoNavbar;
-            color: $colorTexto;
-            font-weight: bold;
-            align-self: flex-start;
-            margin-top: 1rem;
+    }
+    &__container_title_text{
+        position: absolute;
+        margin-right: 20px;
+        text-align: left;
+        margin-top: 10%;
+        width: 45%;
+        
+    }
+    &__container_button{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__presentación {
+        display: flex;
+        flex-direction:row;
+        position: relative;
+        
+        &__button {
+            background-color: $colorTerciario;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 14.75rem;
+            height: 4rem;
+            border: 3px solid $colorPrimario;
+            border-radius: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.56rem;
+            line-height: 1.9rem;
+            &:hover{
+                background-color: white;
+                color:$colorPrimario;
+                border: 3px solid $colorPrimario;
+            }
         }
         
         &--img{
-            margin: 2rem 0;
-            text-align: right;
+            width: 61.18rem;
+            height: 40.81rem;
+            margin-left: 440px;
         }
+        
     }
-    
+    &__container_title{
+        height: 80px;
+    }
+    &__title{
+        color: $colorPrimario;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 2.62rem;
+        line-height: 51.2px
+    };
+
+    &__text{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.56rem;
+        line-height: 30.48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    &__container_text{
+        height: 180px;
+        margin-top: 50px;
+    }
 
     &__plato {
         margin: 1rem 0;
@@ -32,6 +88,23 @@
     
         &--texto { 
             margin-bottom: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 24.38px;
         }
+    }
+    &__container_image{
+        display: flex;
+        justify-content: center;
+        width: 90rem;
+        height: 40rem ;
+    }
+    &__image{
+        width: 72.12rem;
+        height:35.68rem ;
+    }
+    &__container_text_proyecto{
+        height: 100px;
     }
 }

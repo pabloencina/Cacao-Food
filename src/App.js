@@ -20,10 +20,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/ensaladas" element={<SaladSection />} />
-        <Route path="/postres" element={<DessertsSection />} />
-        <Route path="/cremas" element={<CreamsSection />} />
-        <Route path="/bebidas" element={<DrinksSection />} />
+        <Route path="/menu" element={<SaladSection />} />
+        <Route path="/menu" element={<DessertsSection />} />
+        <Route path="/menu" element={<CreamsSection />} />
+        <Route path="/menu" element={<DrinksSection />} />
         <Route path="/nuestra-historia" element={<Nosotros />} />
         <Route path="/clientes" element={<Clientes />} />
         <Route path="/contactanos" element={<Contactanos />} />

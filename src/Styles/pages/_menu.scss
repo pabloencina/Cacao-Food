@@ -200,6 +200,8 @@
             margin: 0.3rem;
             color: black;
             font-size: 1rem;
+            border: none;
+            text-decoration: none;
         }
         &__container_link_menu{
             display: flex;
@@ -209,7 +211,6 @@
             width: 26rem;
             background-color: $colorFondoSecundario;
             border-radius: 2rem;
-        
        } ;
         &__button{
             height: 4rem;
@@ -221,6 +222,8 @@
             font-weight: 500;
             font-size: 1rem;
             line-height: 24px;
+            border: none;
        }
+       
      }
 }

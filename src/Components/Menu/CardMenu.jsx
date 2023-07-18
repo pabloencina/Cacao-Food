@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
-//import dataImages from "../../Data/dataImages";
 
 const CardMenu = ({ menu }) => {
   console.log(menu.image);
@@ -30,9 +29,3 @@ const CardMenu = ({ menu }) => {
 };
 
 export default CardMenu;
-
-/*
-{dataImages.map((image) => (
-        <div key={image.id} className="card_menu__image"></div>
-      ))}
-*/

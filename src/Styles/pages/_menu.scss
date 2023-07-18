@@ -55,25 +55,17 @@
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
-    &:active{
-        background-color: $colorTerciario ;
-       }
    }
    &__link_menu{
         margin: 1rem;
         background-color: $colorFondoSecundario;
         color: black;
-    &:active{
-        background-color: $colorTerciario ;
-       }
     &:hover{
         color: $colorPrimario;
     }
     
    }
    &__link_menu_click{
-    //margin: 1rem;
-    //width: 7,0625rem;
     height: 4rem;
     background-color: $colorTerciario;
     color: black;
@@ -82,8 +74,6 @@
     align-items: center;
 }
 &__link_menu_click_platos{
-    //margin: 1rem;
-    //width: 14,0625rem;
     height: 4rem;
     background-color: $colorTerciario;
     color: black;

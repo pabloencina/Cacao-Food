@@ -1,11 +1,9 @@
-import { Col, Container, Row } from "react-bootstrap";
-import CardMenu from "./CardMenu";
-import dataMenu from "../../Data/dataMenu";
+import { Row } from "react-bootstrap";
 import MenuSections from "./MenuSections";
 
 function Menu() {
   return (
-    <Container fluid>
+    <div>
       <div className="menu__container_title">
         <h1 className="menu__title">Menú</h1>
       </div>
@@ -23,17 +21,9 @@ function Menu() {
       </div>
       <MenuSections />
       <div className="container">
-        <Row>
-          {dataMenu.map((menu) => {
-            return menu.classification === "platos" ? (
-              <Col key={menu.id} md={4}>
-                <CardMenu key={menu.id} menu={menu} />
-              </Col>
-            ) : null;
-          })}
-        </Row>
+        <Row></Row>
       </div>
-    </Container>
+    </div>
   );
 }
 

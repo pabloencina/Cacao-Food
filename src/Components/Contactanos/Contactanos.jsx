@@ -6,8 +6,6 @@ import { NavLink } from "react-bootstrap";
 import GoogleMap from "../Google-map/GoogleMap";
 import FormikSectionContactanos from "./Formik";
 
-//import "../../Css/error.css";
-
 const Contactanos = () => {
   return (
     <div>

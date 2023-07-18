@@ -14,41 +14,22 @@
 
 .background{
         background-color: #6BEA87 ;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
         display: flex;
         justify-content: center;
-        border: none;
-        text-decoration: none;
-  
 }
 
 .backgroundPlatos{
   background-color: #6BEA87 ;
-  width: 132px;
+  width: 122px;
   border-radius: 2rem 0 0 2rem;
-  font-family: 'Montserrat', sans-serif ;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
   display: flex;
   justify-content: center;
-  border: none ;
-  text-decoration: none ;
 }
 
 .backgroundBebidas{
   background-color: #6BEA87 ;
-  width: 132px;
+  width: 122px;
   border-radius: 0 2rem 2rem 0;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
   display: flex;
   justify-content: center;
-  border: none;
-  text-decoration: none;
 }

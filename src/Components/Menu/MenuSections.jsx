@@ -104,13 +104,21 @@ const MenuSections = () => {
       </div>
       <div className="container">
         <Row>
-          {dataMenu.map((menu) => {
-            return menu.classification === classification[activeLink] ? (
-              <Col key={menu.id} md={4}>
-                <CardMenu key={menu.id} menu={menu} />
-              </Col>
-            ) : null;
-          })}
+          {activeLink === null
+            ? dataMenu.map((menu) => {
+                return menu.classification === "platos" ? (
+                  <Col key={menu.id} md={4}>
+                    <CardMenu key={menu.id} menu={menu} />
+                  </Col>
+                ) : null;
+              })
+            : dataMenu.map((menu) => {
+                return menu.classification === classification[activeLink] ? (
+                  <Col key={menu.id} md={4}>
+                    <CardMenu key={menu.id} menu={menu} />
+                  </Col>
+                ) : null;
+              })}
         </Row>
       </div>
     </Container>

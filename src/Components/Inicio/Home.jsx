@@ -3,10 +3,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
-import image_home from "../../Images/image_home.jpg";
+import image_home from "../../Images/inicio-images/image_home.jpg";
 import dataMenu from "../../Data/dataMenu";
 import CardMenu from "../Menu/CardMenu";
-import image_section_home from "../../Images/image_seccion_inicio.jpg";
+import image_section_home from "../../Images/inicio-images/image_seccion_inicio.jpg";
 
 function Home() {
   return (

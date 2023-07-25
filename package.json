@@ -22,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "engines": {
-    "node": "<= 16.18.1 > 17.0.0",
+    "node": ">= 16.18.1 < 17.0.0",
     "npm": ">= 9.3.0"
   },
   "scripts": {
@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "node-sass": "^7.0.3"
   }
 }

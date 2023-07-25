@@ -6,7 +6,7 @@
         height: 5.30rem;
         background-color:$colorPrimario ;
         display: flex;
-        justify-content:end;
+        justify-content:flex-end;;
         align-items: center;
     };
     &__container_social_media{
@@ -62,7 +62,7 @@
             height: 5.30rem;
             background-color:$colorPrimario ;
             display: flex;
-            justify-content:end;
+            justify-content:flex-end;;
             align-items: center;
         };
         &__container_social_media{

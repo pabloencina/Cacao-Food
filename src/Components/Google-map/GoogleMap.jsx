@@ -15,8 +15,8 @@ const GoogleMap = (props) => {
       zoom={14}
       style={mapStyles}
       initialCenter={{
-        lat: 37.7749,
-        lng: -122.4194,
+        lat: 10.60948264057215,
+        lng: -67.00308642767591,
       }}
     />
   );

@@ -1,3 +1,50 @@
+**PROYECTO**
+
+**Cacao Food** es una empresa dedicada al desarrollo sostenible. La motivación del proyecto es ofrecerte los ingredientes más frescos.
+También se preocupándose del medio ambiente, por l oque se promueve el uso de envases ecológicos y reciclables.
+
+**INSTALACIÓN**
+
+**Pre-requisitos**: Editor de código (Visual Studio Code o similar), NodeJS.
+
+**Paso 1**:
+Crea una carpeta local para alojar el repositorio.
+
+**Paso 2**:
+Posiciónate en la carpeta creada y clona el repositorio:
+git clone https://github.com/pabloencina/Cacao-Food.git O descárgalo desde el sitio de Github como .zip.
+
+**Paso 3**:
+Ingresa a tu editor de código (Visual Studio Code).
+Abre una ventana de terminal y posiciónate en la carpeta local que creaste y dentro de ella en la carpeta "Cacao-Food".
+Escribe "npm install". Con esto, habrás instalado todas las dependencias necesarias.
+
+**Paso 4**:
+Ejecuta npm start. Esto iniciará el servidor y se abrirá http://localhost:3000 en tu navegador.
+
+**TECNOLOGÍAS**
+
+- React.js "^18.2.0",
+- React-boostrap: "^2.7.4",
+- Boostrap: "^5.3.0",
+- Node.sass: "^7.0.3"
+- Node.js: "17.0.0"
+
+**EQUIPO**
+**Programadores:**
+**Nombre**: Encina Pablo David.
+**LinkedIn**: https://www.linkedin.com/in/pablo-david-encina-597399164/
+//
+**Nombre**: Villareal Federico.
+**LinkedIn**: https://www.linkedin.com/in/federico-villarreal
+
+**Diseñadores UX/UI:**
+**Nombre**: Fernandez Andreina.
+**LinkedIn**: https://www.linkedin.com/in/andreinacfernandez/
+//
+**Nombre**: Palmieri Valentina.
+**LinkedInd**: https://www.linkedin.com/in/valentina-palmieri-96-/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

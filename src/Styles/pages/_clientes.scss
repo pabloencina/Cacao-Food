@@ -3,7 +3,12 @@
     margin: 2rem 0;
 
     &__titulos {
-        margin: 1rem 0;
+        margin: 2rem 0 1rem 0;
+        font-size: 4em;
+
+        &--negros{
+            color: $colorTexto;
+        }
     }
 
     &__nuestrosClientesContainer {
@@ -11,6 +16,7 @@
 
         &--texto {
             margin: 1rem 0;
+            font-size: 1.5em;
         }
 
         &--img {
@@ -22,9 +28,10 @@
 
         &--individual {
             margin: 1rem 0.5rem;
-            padding: 1rem;
-            border-radius: 10px;
-            background-color: $colorFondoNavbar;
+            padding: 1.5rem;
+            border-radius: 50px;
+            background-color: $colorFondoSecundario;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         &--perfil {
@@ -34,4 +41,8 @@
         }
     }
 
+    &__img--calificar{
+        margin: 0 3rem;
+        scale: 1.2;
+    }
 }

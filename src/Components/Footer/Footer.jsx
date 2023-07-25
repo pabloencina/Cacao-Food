@@ -6,6 +6,9 @@ import { faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <div className="footer__container">
+      <div className="footer__container_copyright">
+        <div className="footer__copyright">Copyright© 2023 Cacao Food</div>
+      </div>
       <div className="footer__container_social_media">
         <Link
           title="Instagram CacaoFood"

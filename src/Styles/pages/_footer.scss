@@ -40,6 +40,16 @@
     &__image_Instagram{
         width: 1.5rem;
     }
+    &__container_copyright{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    &__copyright{
+        color: #F2FFF5;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    }
 }
 
 @media screen  and (max-width:412px){

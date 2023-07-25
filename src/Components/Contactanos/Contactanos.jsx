@@ -4,7 +4,7 @@ import Facebook from "../../Images/facebook.svg";
 import WhatsApp from "../../Images/whatsapp.svg";
 import { NavLink } from "react-bootstrap";
 import GoogleMap from "../Google-map/GoogleMap";
-import FormikSectionContactanos from "./Formik";
+import FormikSectionContactanos from './Formik';
 
 const Contactanos = () => {
   return (

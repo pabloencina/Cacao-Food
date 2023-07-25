@@ -3,3 +3,15 @@ body{
     color: $colorTexto;
     margin: 1rem 2rem 1rem 2rem;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: $colorPrimario;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: $colorTexto;
+    font-weight: 500;
+}

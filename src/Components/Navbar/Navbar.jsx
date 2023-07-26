@@ -1,8 +1,6 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Search from "./Search";
-//import { useState } from "react";
-//import dataMenu from "../../Data/dataMenu";
 import "../../Css/active.css";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

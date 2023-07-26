@@ -1,20 +1,17 @@
 .navbar{
         background-color: $colorFondoSecundario;
-        width: 90rem;
         max-width: 100%;
         height: 5.30rem;
     &__container_logo{
         margin-left: 20px;
     }
     &__container_button{
-    //height: 2rem;
    display: flex;
    justify-content: space-between;
    margin-left: 6rem; 
     width: 60%;
   }
     &__search{
-        //margin-left: 300px;
         width: 1.75rem;
         height: 1.75rem;
         color: black;
@@ -30,7 +27,6 @@
         align-items: center;
        justify-content: space-between;
         width: 30%;
-        //background-color: aqua
     };
     &__shoppingCart{
         width: 1.75rem;
@@ -89,7 +85,6 @@
     
     &__button{
         background-color: inherit;
-        //width: 150px;
         border: none;
         &:hover{
             color:$colorTerciario;

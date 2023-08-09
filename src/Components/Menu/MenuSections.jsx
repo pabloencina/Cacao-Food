@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 import dataMenu from "../../Data/dataMenu";
 import CardMenu from "./CardMenu";
 
@@ -22,7 +22,7 @@ const MenuSections = () => {
   };
 
   return (
-    <Container>
+    <div className="menu_section__container_buttons">
       <div className="menu_section__container">
         <div className="menu_section__container_link_menu">
           <div
@@ -121,7 +121,7 @@ const MenuSections = () => {
               })}
         </Row>
       </div>
-    </Container>
+    </div>
   );
 };
 

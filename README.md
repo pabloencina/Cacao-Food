@@ -20,7 +20,7 @@ Abre una ventana de terminal y posiciónate en la carpeta local que creaste y de
 Escribe "npm install". Con esto, habrás instalado todas las dependencias necesarias.
 
 **Paso 4**:
-Ejecuta npm start. Esto iniciará el servidor y se abrirá http://localhost:3000 en tu navegador.
+Ejecuta npm start. Esto iniciará el servidor y se abrirá https://cacao-food.netlify.app/ en tu navegador.
 
 **TECNOLOGÍAS**
 

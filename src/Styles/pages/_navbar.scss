@@ -99,14 +99,23 @@
         width: 1rem;
     };
 }
-
-@media screen  and (max-width:412px){
+  // De 350px a 450px
+@media screen and (min-width: 21.875rem) and (max-width: 28.125rem){
    
     .navbar{
-        width: 25rem;
+        width: 100%;
         &__search{
             width: 1.5rem;
+            display: none
         };
+        &__container_button{
+            background-color:$colorPrimario; ;
+            width: 100%;
+            margin-top: 20px;
+            display:block;
+          position: relative;
+            //height: 100%;
+        }
         &__container_icons_buttons{
             margin-right: 1.5rem;
             display: block;
@@ -120,6 +129,7 @@
         &__link{
             margin: 0.5rem;
             color: black;
+            background-color: $colorPrimario;
             display: flex;
             align-items: center;
             max-width: 100%;
@@ -138,49 +148,50 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             font-size: 1rem;
+            display: none;
         }
-        .search{
-            &__container{
-                width: 100%;
-            };
-            &__button{
-                background-color: inherit;
-                border: none;
-                display: flex;
-                justify-content: center
-            };
-            &__input{
-                display: none;
-            }
-        }
+        // .search{
+        //     &__container{
+        //         width: 100%;
+        //     };
+        //     &__button{
+        //         background-color: inherit;
+        //         border: none;
+        //         display: flex;
+        //         justify-content: center
+        //     };
+        //     &__input{
+        //         display: none;
+        //     }
+        // }
     
-.menuBurger{
-    &__container{
-        display:block;
-         position: relative;
-         bottom: 3rem;
-        img{
-            position: absolute;
-            width: 1.2rem;
-            margin-left: 8.5rem;
-            display: block;
-            background-color: red;
-        }
+// .menuBurger{
+//     &__container{
+//         display:block;
+//          position: relative;
+//          bottom: 3rem;
+//         img{
+//             position: absolute;
+//             width: 1.2rem;
+//             margin-left: 8.5rem;
+//             display: block;
+//             background-color: red;
+//         }
 
-        img:first-child{
-            z-index: 1;
-            top: 0;
-            left: 0;
-            display: block;
-        }
+//         img:first-child{
+//             z-index: 1;
+//             top: 0;
+//             left: 0;
+//             display: block;
+//         }
 
-        img:last-child{
-            z-index: 2;
-            top: 1rem;
-            left: 1rem;
-            display: block;
-        }
-    };
-}
+//         img:last-child{
+//             z-index: 2;
+//             top: 1rem;
+//             left: 1rem;
+//             display: block;
+//         }
+//     };
+// }
     }
 }

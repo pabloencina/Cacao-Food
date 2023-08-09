@@ -55,7 +55,7 @@ function Home() {
           <Row>
             {dataMenu.map((menu) => {
               return menu.destacados === true ? (
-                <Col key={menu.id} md={4}>
+                <Col key={menu.id} md={4} sx={12} sm={12}>
                   <CardMenu key={menu.id} menu={menu} />
                 </Col>
               ) : null;

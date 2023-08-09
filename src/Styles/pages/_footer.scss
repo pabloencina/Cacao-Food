@@ -53,8 +53,8 @@
     }
 }
 
-@media screen  and (max-width:412px){
-    
+// De 350px a 450px
+@media screen and (min-width: 21.875rem) and (max-width: 28.125rem){
     .footer{
        // width: 25rem;
         &__container{
@@ -65,6 +65,13 @@
             justify-content:flex-end;;
             align-items: center;
         };
+        &__container_copyright{
+           
+            width: 47%;
+        }
+        &__copyright{
+            font-size: 14px;
+        }
         &__container_social_media{
             display: flex;
             flex-direction: column;
@@ -75,7 +82,7 @@
             background-color: inherit;
             border: initial;
             font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
+            font-size: 14px;
             &:hover{
                 color:black
             }
@@ -86,7 +93,7 @@
             background-color: inherit;
             border: initial;
             font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
+            font-size: 14px;
             &:hover{
                 color:black
             }

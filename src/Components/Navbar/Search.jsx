@@ -1,12 +1,10 @@
-//import React, { useState } from "react";
-import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const Search = () => {
   return (
-    <Container>
+    <div className="search__button_container">
       <Link className="search__button">
         <FontAwesomeIcon
           icon={faMagnifyingGlass}
@@ -14,7 +12,7 @@ const Search = () => {
           title="Búsqueda"
         />
       </Link>
-    </Container>
+    </div>
   );
 };
 

@@ -91,7 +91,7 @@ const GoogleMap = (props) => {
       className="contactanos__googleMap_container"
     >
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }}
+        //bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >

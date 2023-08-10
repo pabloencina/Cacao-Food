@@ -13,7 +13,7 @@ function NavbarComponent() {
     <Navbar collapseOnSelect expand="lg">
       <Navbar.Brand
         href="/"
-        activeClassName="active"
+        //activeClassName="active"
         className="navbar__container_logo"
       >
         <img src={logoCacaoFood} alt="Logo CacaoFood" />
@@ -71,21 +71,22 @@ function NavbarComponent() {
             }}
           >
             <Search />
-
-            <Link>
-              <div className="navbar__shoppingCart">
+            <div className="navbar__shoppingCart_container">
+              <Link>
                 <FontAwesomeIcon
                   icon={faCartShopping}
                   className="navbar__shoppingCart"
                   title="Carrito de Compras"
                 />
-              </div>
+              </Link>
+            </div>
+          </div>
+          <div className="navbar__container_mi_perfil">
+            {" "}
+            <Link className="navbar__mi_perfil" to={"/"} href="/">
+              Mi Perfil
             </Link>
           </div>
-
-          <Link className="navbar__mi_perfil" to={"/"} href="/">
-            Mi Perfil
-          </Link>
         </Container>
       </Navbar.Collapse>
     </Navbar>

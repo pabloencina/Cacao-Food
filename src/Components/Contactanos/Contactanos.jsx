@@ -2,9 +2,9 @@ import React from "react";
 import Instagram from "../../Images/instagram.svg";
 import Facebook from "../../Images/facebook.svg";
 import WhatsApp from "../../Images/whatsapp.svg";
-import { NavLink } from "react-bootstrap";
+import { Col, NavLink, Row } from "react-bootstrap";
 import GoogleMap from "../Google-map/GoogleMap";
-import FormikSectionContactanos from './Formik';
+import FormikSectionContactanos from "./Formik";
 
 const Contactanos = () => {
   return (
@@ -24,37 +24,35 @@ const Contactanos = () => {
                   sociales:
                 </p>
               </div>
-              <div className="contactanos__icons_box">
-                <div className="row">
-                  <div className="col-md-4">
-                    <NavLink>
-                      <img
-                        className="contactanos__icons"
-                        src={Instagram}
-                        alt="Instagram"
-                      />
-                    </NavLink>
-                  </div>
-                  <div className="col-md-4">
-                    <NavLink>
-                      <img
-                        className="contactanos__icons"
-                        src={Facebook}
-                        alt="Facebook"
-                      />
-                    </NavLink>
-                  </div>
-                  <div className="col-md-4">
-                    <NavLink>
-                      <img
-                        className="contactanos__icons"
-                        src={WhatsApp}
-                        alt="WhatsApp"
-                      />
-                    </NavLink>
-                  </div>
-                </div>
-              </div>
+              <Col xs={12} md={12} sm={12} className="contactanos__icons_box">
+                <Row xs={12} md={12} sm={12} className="contactanos__row">
+                  <NavLink>
+                    <img
+                      className="contactanos__icons"
+                      src={Instagram}
+                      alt="Instagram"
+                    />
+                  </NavLink>
+                </Row>
+                <Row xs={12} md={12} sm={12} className="contactanos__row">
+                  <NavLink>
+                    <img
+                      className="contactanos__icons"
+                      src={Facebook}
+                      alt="Facebook"
+                    />
+                  </NavLink>
+                </Row>
+                <Row xs={12} md={12} sm={12} className="contactanos__row">
+                  <NavLink>
+                    <img
+                      className="contactanos__icons"
+                      src={WhatsApp}
+                      alt="WhatsApp"
+                    />
+                  </NavLink>
+                </Row>
+              </Col>
               <div>
                 <div className="contactanos__text_box">
                   <p className="contactanos__text">

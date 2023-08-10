@@ -35,9 +35,10 @@
     };
     &__icons{
         width: 3rem;
+        margin: 3.125rem
     };
     &__text_input_box{
-        
+
         display: flex;
         align-items: center;
         justify-content:flex-start;
@@ -72,7 +73,7 @@
         font-size: 20px;
         line-height: 40px
     };
-    &__box_button_enviar{   
+    &__box_button_enviar{
         display: flex;
         height: 7.5rem;
         align-items: center;
@@ -97,12 +98,14 @@
             border: 3px solid $colorPrimario;
         }
     };
-    &__google_map_container{
+    &__googleMap_container{
         //display: flex;
         justify-content: center;
         align-items: center;
-        height: 35rem;
-        width: 75.87rem
+        height: 400px;
+        width: 350px;
+        //background-color: red;
+        margin: 50px
     };
     &__google_map{
         height: 27.68rem;
@@ -114,41 +117,53 @@
  @media screen and (min-width: 21.875rem) and (max-width: 28.125rem) {
     .contactanos{
         &__title_box{
-            height: 10rem;
+            height: 5rem;
             display: flex;
             align-items:flex-end;
-            //background-color: aqua;
+            justify-content: center;
             margin: 0%
         };
         &__title{
             font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
+            //font-weight: 700;
             color: $colorPrimario;
-            font-size: 3.25rem;
-            line-height: 4rem;
+            font-size: 1.5625em;
+            //line-height: 4rem;
         }
         &__text_box{
-            height:  6rem;
-            width: 60%;
+            height:  7rem;
+            
+            width: 100%;
             display: flex;
+            justify-content: center;
             align-items: center;
         };
         &__text{
             font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            font-size: 1.56rem;
-            line-height: 2rem;
+            //font-weight: 500;
+            font-size: 1em;
+            //line-height: 2rem;
         }
         &__icons_box{
             height:  6rem;
-            width: 60%;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            //background-color: aqua
+            flex-direction: row;
+            text-align: center;
         };
+        &__row{
+            display: flex; /* Usar flexbox */
+            flex-direction: column;
+            justify-content: center; /* Centrar horizontalmente los íconos en la fila */
+            //margin: 0.625rem; /* Agregar un margen entre las filas de íconos */
+        }
         &__icons{
-            width: 3rem;
+            width: 1.875rem;
+            //width: 50px; /* Ajusta el tamaño de acuerdo a tus necesidades */
+            height: 3.125rem;
+            //margin: 10px; /* Agrega un margen entre los iconos */
         };
         &__text_input_box{
             display: flex;
@@ -156,16 +171,16 @@
             align-items: center;
             justify-content:center;
             height:  6rem;
-            
+
         };
         &__text_input{
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             font-size: 1.25em;
             line-height: 2.285625rem;
-            
+
         }
-        
+
         &__asterisco{
             color: #E20605;
         }
@@ -180,7 +195,7 @@
             line-height: 40px
         };
         &__text_area_box::placeholder{
-            font-size: 9px; 
+            font-size: 9px;
             font-weight: bold;
             color: gray;
         }
@@ -193,14 +208,14 @@
             font-weight: 500;
             font-size: 20px;
             line-height: 40px;
-            
+
         };
         &__input_box::placeholder{
-            font-size: 9px; 
+            font-size: 9px;
             font-weight: bold;
             color: gray;
         }
-        &__box_button_enviar{   
+        &__box_button_enviar{
             display: flex;
             height: 7.5rem;
             align-items: center;
@@ -225,16 +240,15 @@
                 border: 2px solid $colorPrimario;
             }
         };
-        &__google_map_container{
-            //display: flex;
+        &__googleMap_container{
+            display: flex;
             justify-content: center;
             align-items: center;
-            height: 35rem;
-            width: 75.87rem
+            margin-right: 30px
         };
-        &__google_map{
-            height: 27.68rem;
-            width: 75.87rem;
-        }
+        // &__google_map{
+        //     height: 27.68rem;
+        //     width: 75.87rem;
+        // }
     }
 }

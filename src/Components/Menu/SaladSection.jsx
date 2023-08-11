@@ -27,7 +27,7 @@ const SaladSection = () => {
         <Row>
           {dataMenu.map((menu) => {
             return menu.classification === "ensalada" ? (
-              <Col key={menu.id} xs={12} md={6} lg={4}>
+              <Col key={menu.id} xs={12} sm={6} md={6} lg={4}>
                 <CardMenu key={menu.id} menu={menu} />
               </Col>
             ) : null;

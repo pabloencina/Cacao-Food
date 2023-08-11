@@ -1,4 +1,4 @@
-import { Row } from "react-bootstrap";
+//import { Row } from "react-bootstrap";
 import MenuSections from "./MenuSections";
 
 function Menu() {
@@ -20,9 +20,9 @@ function Menu() {
         </div>
       </div>
       <MenuSections />
-      <div className="container">
+      {/* <div className="container">
         <Row></Row>
-      </div>
+      </div> */}
     </div>
   );
 }

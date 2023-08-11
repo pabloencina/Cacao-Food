@@ -10,7 +10,7 @@ import { Container } from "react-bootstrap";
 
 function NavbarComponent() {
   return (
-    <Navbar collapseOnSelect expand="lg">
+    <Navbar collapseOnSelect expand="lg" className="navbar__container_navbar">
       <Navbar.Brand
         href="/"
         //activeClassName="active"

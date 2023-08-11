@@ -11,7 +11,7 @@ const CreamsSection = () => {
         <Row>
           {dataMenu.map((menu) => {
             return menu.classification === "cremas" ? (
-              <Col key={menu.id} md={4}>
+              <Col xs={12} md={6} lg={4} key={menu.id}>
                 <CardMenu key={menu.id} menu={menu} />
               </Col>
             ) : null;

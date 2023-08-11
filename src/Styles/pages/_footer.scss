@@ -154,3 +154,54 @@
          }
      }
 }
+
+// De 750px a 1200px
+@media screen and (min-width: 46.875rem) and (max-width: 75rem) {
+    .footer{
+        &__container{   
+            height: 5.30rem;
+            background-color:$colorPrimario ;
+            display: flex;
+            justify-content:flex-end;;
+            align-items: center;
+        };
+        &__container_copyright{
+            width: 47%;
+        }
+        &__copyright{
+            font-size: 14px;
+        }
+        &__container_social_media{
+            display: flex;
+            flex-direction: column;
+            margin-right: 4rem
+        };
+        &__social_media_Instagram{
+            color: #F2FFF5;
+            background-color: inherit;
+            border: initial;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            &:hover{
+                color:black
+            }
+            
+        };
+        &__social_media_Facebook{
+            color: #F2FFF5;
+            background-color: inherit;
+            border: initial;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            &:hover{
+                color:black
+            }
+        };
+        &__image_Facebook{
+            width: 1.5rem;
+        };
+        &__image_Instagram{
+            width: 1.5rem;
+        }
+    }
+}

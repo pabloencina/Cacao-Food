@@ -35,7 +35,7 @@ function Home() {
             </div>
           </div>
 
-          <div>
+          <div className="home__container_img_presentación">
             <Image
               src={image_home}
               rounded
@@ -46,7 +46,7 @@ function Home() {
         </div>
       </Row>
 
-      <Row className="justify-content-center home">
+      <Row className="justify-content-center home__container_destacados">
         <div className="home__container_title">
           <h1 className="home__title">Platos destacados</h1>
         </div>
@@ -63,7 +63,7 @@ function Home() {
           </Row>
         </div>
       </Row>
-      <Row className="justify-content-center home">
+      <Row className="justify-content-center home__container_destacados">
         <div className="home__container_title">
           <h1 className="home__title">Proyectos a futuro</h1>
         </div>

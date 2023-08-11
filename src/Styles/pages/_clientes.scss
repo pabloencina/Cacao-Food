@@ -96,3 +96,53 @@
         }
     }
 }
+
+//De 450px a 750px
+@media screen and (min-width: 28.125rem) and (max-width: 46.875rem) {
+    .clientes {
+        margin: 2rem 0;
+        &__títulos {
+            margin: 2rem 0 1rem 0;
+            font-size: 1.5625em;
+    
+            &--negros{
+                color: $colorTexto;
+            }
+        }
+    
+        &__nuestrosClientesContainer {
+            margin: auto;
+    
+            &--texto {
+                margin: 1rem 0;
+                font-size: 1em;
+            }
+    
+            &--img {
+                text-align: center;
+            }
+        }
+    
+        &__clienteContainer {
+    
+            &--individual {
+                margin: 1rem 0.5rem;
+                padding: 1.5rem;
+                border-radius: 50px;
+                background-color: $colorFondoSecundario;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+    
+            &--perfil {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+            }
+        }
+    
+        &__img--calificar{
+            margin: 0 3rem;
+            scale: 1.2;
+        }
+    }
+}

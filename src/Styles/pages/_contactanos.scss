@@ -252,3 +252,143 @@
         // }
     }
 }
+
+// De 450px a 750px
+@media screen and (min-width: 28.125rem) and (max-width: 46.875rem) {
+    .contactanos{
+        &__title_box{
+            height: 6rem;
+            display: flex;
+            //align-items:flex-end;
+            justify-content: center;
+            margin: 0%;
+        };
+        &__title{
+            font-family: 'Montserrat', sans-serif;
+            //font-weight: 700;
+            color: $colorPrimario;
+            font-size: 1.5625em;
+            //line-height: 4rem;
+        }
+        &__text_box{
+            height:  2rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        };
+        &__text{
+            font-family: 'Montserrat', sans-serif;
+            //font-weight: 500;
+            font-size: 1em;
+            //line-height: 2rem;
+        }
+        &__icons_box{
+            height:  6rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            text-align: center;
+        };
+        &__row{
+            display: flex; /* Usar flexbox */
+            flex-direction: column;
+            justify-content: center; /* Centrar horizontalmente los íconos en la fila */
+            //margin: 0.625rem; /* Agregar un margen entre las filas de íconos */
+        }
+        &__icons{
+            width: 1.875rem;
+            //width: 50px; /* Ajusta el tamaño de acuerdo a tus necesidades */
+            height: 3.125rem;
+            //margin: 10px; /* Agrega un margen entre los iconos */
+        };
+        &__text_input_box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            height:  6rem;
+
+        };
+        &__text_input{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.25em;
+            line-height: 2.285625rem;
+
+        }
+
+        &__asterisco{
+            color: #E20605;
+        }
+        &__text_area_box{
+            width: 100%;
+            height: 12.81rem;
+            border-radius: 1rem;
+            border: 1.5px solid #39874A;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 40px
+        };
+        
+        &__text_area_box::placeholder{
+            font-size: 12px;
+            font-weight: bold;
+            color: gray;
+        }
+        &__input_box{
+            width: 100%;
+            height: 3.75rem;
+            border-radius: 1rem;
+            border: 1.5px solid #39874A;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 40px;
+
+        };
+        &__input_box::placeholder{
+            font-size: 12px;
+            font-weight: bold;
+            color: gray;
+        }
+        &__box_button_enviar{
+            display: flex;
+            height: 7.5rem;
+            align-items: center;
+        };
+        &__button_enviar{
+            background-color: $colorTerciario;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10rem;
+            height: 3.5rem;
+            border: 2px solid $colorPrimario;
+            border-radius: 32px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1em;
+            //line-height: 1.9rem;
+            &:hover{
+                background-color: white;
+                color:$colorPrimario;
+                border: 2px solid $colorPrimario;
+            }
+        };
+        &__googleMap_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px
+        };
+        // &__google_map{
+        //     height: 27.68rem;
+        //     width: 75.87rem;
+        // }
+    }
+}

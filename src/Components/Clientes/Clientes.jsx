@@ -35,7 +35,13 @@ function Clientes() {
       </Row>
       <Row className="justify-content-center clientes">
         <h2 className="clientes__títulos">Sus opiniones</h2>
-        <Col xs={12} md={6} lg={4} className="clientes__clienteContainer">
+        <Col
+          xs={12}
+          sm={6}
+          md={6}
+          lg={4}
+          className="clientes__clienteContainer"
+        >
           <Col className="clientes__clienteContainer--individual">
             <Row className="clientes__clienteContainer--perfil">
               <Col xs={5}>
@@ -57,7 +63,13 @@ function Clientes() {
             </Row>
           </Col>
         </Col>
-        <Col xs={12} md={6} lg={4} className="clientes__clienteContainer">
+        <Col
+          xs={12}
+          sm={6}
+          md={6}
+          lg={4}
+          className="clientes__clienteContainer"
+        >
           <Col className="clientes__clienteContainer--individual">
             <Row className="clientes__clienteContainer--perfil">
               <Col xs={5}>
@@ -79,7 +91,13 @@ function Clientes() {
             </Row>
           </Col>
         </Col>
-        <Col xs={12} md={6} lg={4} className="clientes__clienteContainer">
+        <Col
+          xs={12}
+          sm={6}
+          md={6}
+          lg={4}
+          className="clientes__clienteContainer"
+        >
           <Col className="clientes__clienteContainer--individual">
             <Row className="clientes__clienteContainer--perfil">
               <Col xs={5}>

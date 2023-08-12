@@ -19,7 +19,10 @@ function NavbarComponent() {
         <img src={logoCacaoFood} alt="Logo CacaoFood" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
+      <Navbar.Collapse
+        id="responsive-navbar-nav"
+        className="navbar__container_collapse fluid"
+      >
         <Nav className="navbar__container_button">
           <NavLink
             className="navbar__link"

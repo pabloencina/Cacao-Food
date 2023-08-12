@@ -1,148 +1,144 @@
 .clientes {
+  margin: 2rem 0;
 
-    margin: 2rem 0;
+  &__títulos {
+    margin: 2rem 0 1rem 0;
+    font-size: 4em;
 
-    &__títulos {
-        margin: 2rem 0 1rem 0;
-        font-size: 4em;
+    &--negros {
+      color: $colorTexto;
+    }
+  }
 
-        &--negros{
-            color: $colorTexto;
-        }
+  &__nuestrosClientesContainer {
+    margin: auto;
+
+    &--texto {
+      margin: 1rem 0;
+      font-size: 1.5em;
     }
 
-    &__nuestrosClientesContainer {
-        margin: auto;
+    &--img {
+      text-align: center;
+    }
+  }
 
-        &--texto {
-            margin: 1rem 0;
-            font-size: 1.5em;
-        }
-
-        &--img {
-            text-align: center;
-        }
+  &__clienteContainer {
+    &--individual {
+      margin: 1rem 0.5rem;
+      padding: 1.5rem;
+      border-radius: 50px;
+      background-color: $colorFondoSecundario;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
-    &__clienteContainer {
-
-        &--individual {
-            margin: 1rem 0.5rem;
-            padding: 1.5rem;
-            border-radius: 50px;
-            background-color: $colorFondoSecundario;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        &--perfil {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
+    &--perfil {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
     }
+  }
 
-    &__img--calificar{
-        margin: 0 3rem;
-        scale: 1.2;
-    }
+  &__img--calificar {
+    margin: 0 3rem;
+    scale: 1.2;
+  }
 }
 
 // De 350px a 450px
-@media screen and (min-width: 21.875rem) and (max-width: 28.125rem){
-    .clientes {
-        margin: 2rem 0;
-        &__títulos {
-            margin: 2rem 0 1rem 0;
-            font-size: 1.5625em;
-    
-            &--negros{
-                color: $colorTexto;
-            }
-        }
-    
-        &__nuestrosClientesContainer {
-            margin: auto;
-    
-            &--texto {
-                margin: 1rem 0;
-                font-size: 1em;
-            }
-    
-            &--img {
-                text-align: center;
-            }
-        }
-    
-        &__clienteContainer {
-    
-            &--individual {
-                margin: 1rem 0.5rem;
-                padding: 1.5rem;
-                border-radius: 50px;
-                background-color: $colorFondoSecundario;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            }
-    
-            &--perfil {
-                display: flex;
-                align-items: center;
-                margin-bottom: 1rem;
-            }
-        }
-    
-        &__img--calificar{
-            margin: 0 3rem;
-            scale: 1.2;
-        }
+@media screen and (min-width: 21.875rem) and (max-width: 28.125rem) {
+  .clientes {
+    margin: 2rem 0;
+    &__títulos {
+      margin: 2rem 0 1rem 0;
+      font-size: 1.5625em;
+
+      &--negros {
+        color: $colorTexto;
+      }
     }
+
+    &__nuestrosClientesContainer {
+      margin: auto;
+
+      &--texto {
+        margin: 1rem 0;
+        font-size: 1em;
+      }
+
+      &--img {
+        text-align: center;
+      }
+    }
+
+    &__clienteContainer {
+      &--individual {
+        margin: 1rem 0.5rem;
+        padding: 1.5rem;
+        border-radius: 50px;
+        background-color: $colorFondoSecundario;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      &--perfil {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__img--calificar {
+      margin: 0 3rem;
+      scale: 1.2;
+    }
+  }
 }
 
 //De 450px a 750px
 @media screen and (min-width: 28.125rem) and (max-width: 46.875rem) {
-    .clientes {
-        margin: 2rem 0;
-        &__títulos {
-            margin: 2rem 0 1rem 0;
-            font-size: 1.5625em;
-    
-            &--negros{
-                color: $colorTexto;
-            }
-        }
-    
-        &__nuestrosClientesContainer {
-            margin: auto;
-    
-            &--texto {
-                margin: 1rem 0;
-                font-size: 1em;
-            }
-    
-            &--img {
-                text-align: center;
-            }
-        }
-    
-        &__clienteContainer {
-    
-            &--individual {
-                margin: 1rem 0.5rem;
-                padding: 1.5rem;
-                border-radius: 50px;
-                background-color: $colorFondoSecundario;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            }
-    
-            &--perfil {
-                display: flex;
-                align-items: center;
-                margin-bottom: 1rem;
-            }
-        }
-    
-        &__img--calificar{
-            margin: 0 3rem;
-            scale: 1.2;
-        }
+  .clientes {
+    margin: 2rem 0;
+    &__títulos {
+      margin: 2rem 0 1rem 0;
+      font-size: 1.5625em;
+
+      &--negros {
+        color: $colorTexto;
+      }
     }
+
+    &__nuestrosClientesContainer {
+      margin: auto;
+
+      &--texto {
+        margin: 1rem 0;
+        font-size: 1em;
+      }
+
+      &--img {
+        text-align: center;
+      }
+    }
+
+    &__clienteContainer {
+      &--individual {
+        margin: 1rem 0.5rem;
+        padding: 1.5rem;
+        border-radius: 50px;
+        background-color: $colorFondoSecundario;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      &--perfil {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__img--calificar {
+      margin: 0 3rem;
+      scale: 1.2;
+    }
+  }
 }
